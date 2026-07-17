@@ -1,0 +1,1471 @@
+natural_language_query,sql_query
+Get customer id and count of records from orders grouped by customer id having count greater than 8,"SELECT customer_id, COUNT(*) FROM orders GROUP BY customer_id HAVING COUNT(*) > 8;"
+"Add a new record to the orders with values 23, 4150, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (23, 4150, '2022-04-25');"
+Change order date to 2022-02-14 in orders where order date is 2022-03-20,UPDATE orders SET order_date = ''2022-02-14'' WHERE order_date = '2022-03-20';
+List all orders where total amount is greater than 3900,SELECT * FROM orders WHERE total_amount > 3900;
+List all employees where name is greater than Bob Lee,SELECT * FROM employees WHERE name > 'Bob Lee';
+Change order date to 2022-03-20 in orders where id is 1,UPDATE orders SET order_date = '2022-03-20' WHERE id = '1';
+"Add a new record to the orders with values 9, 100, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (9, 100, '2022-03-20');"
+List all order items where product id is greater than 19,SELECT * FROM order_items WHERE product_id > 19;
+"Add a new record to the customers with values Helen Martin, grace.lee@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('Helen Martin', 'grace.lee@example.com', '2021-11-05');"
+Change total amount to 4800 in orders where customer id is 33,UPDATE orders SET total_amount = '4800' WHERE customer_id = '33';
+"Add a new record to the products with values Monitor, 1000, 210","INSERT INTO products (name, price, stock) VALUES ('Monitor', 1000, 210);"
+List all order items where product id is greater than 4,SELECT * FROM order_items WHERE product_id > 4;
+"Add a new record to the products with values Smartphone, 900, 410","INSERT INTO products (name, price, stock) VALUES ('Smartphone', 900, 410);"
+List all order items where product id is greater than 2,SELECT * FROM order_items WHERE product_id > 2;
+"Add a new record to the customers with values Helen Martin, frank.harris@example.com, 2020-07-23","INSERT INTO customers (name, email, signup_date) VALUES ('Helen Martin', 'frank.harris@example.com', '2020-07-23');"
+Change name to Desk Chair in products where name is Desk Chair,UPDATE products SET name = 'Desk' Chair WHERE name = 'Desk' Chair;
+"Add a new record to the products with values Laptop, 1600, 310","INSERT INTO products (name, price, stock) VALUES ('Laptop', 1600, 310);"
+Remove records from employees where age is less than 29,DELETE FROM employees WHERE age < 29;
+List all employees sorted by name,SELECT * FROM employees ORDER BY name;
+Get order date and count of records from orders grouped by order date having count greater than 2,"SELECT order_date, COUNT(*) FROM orders GROUP BY order_date HAVING COUNT(*) > 2;"
+Get salary and count of records from employees grouped by salary having count greater than 3,"SELECT salary, COUNT(*) FROM employees GROUP BY salary HAVING COUNT(*) > 3;"
+Remove records from orders where total amount is less than 1200,DELETE FROM orders WHERE total_amount < 1200;
+Get name and count of records from employees grouped by name having count greater than 9,"SELECT name, COUNT(*) FROM employees GROUP BY name HAVING COUNT(*) > 9;"
+"Add a new record to the employees with values Carol King, 50, Sales, 65000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 50, 'Sales', 65000);"
+Get department and count of records from employees grouped by department having count greater than 8,"SELECT department, COUNT(*) FROM employees GROUP BY department HAVING COUNT(*) > 8;"
+List all orders where customer id is greater than 43,SELECT * FROM orders WHERE customer_id > 43;
+Remove records from products where price is less than 1900,DELETE FROM products WHERE price < 1900;
+Remove records from products where name is less than Keyboard,DELETE FROM products WHERE name < Keyboard;
+Get the total name from customers,SELECT SUM(total_amount) FROM customers;
+Remove records from orders where total amount is less than 2450,DELETE FROM orders WHERE total_amount < 2450;
+Change price to 1300 in products where stock is 270,UPDATE products SET price = '1300' WHERE stock = '270';
+List all order items where product id is greater than 14,SELECT * FROM order_items WHERE product_id > 14;
+Change salary to 70000 in employees where id is 1,UPDATE employees SET salary = '70000' WHERE id = '1';
+Get product id and count of records from order items grouped by product id having count greater than 8,"SELECT product_id, COUNT(*) FROM order_items GROUP BY product_id HAVING COUNT(*) > 8;"
+Change stock to 50 in products where price is 1600,UPDATE products SET stock = '50' WHERE price = '1600';
+Remove records from products where name is less than Desk Chair,DELETE FROM products WHERE name < Desk Chair;
+Remove records from employees where salary is less than 110000,DELETE FROM employees WHERE salary < 110000;
+List all products where stock is greater than 410,SELECT * FROM products WHERE stock > 410;
+Get name and count of records from customers grouped by name having count greater than 8,"SELECT name, COUNT(*) FROM customers GROUP BY name HAVING COUNT(*) > 8;"
+"Add a new record to the products with values Laptop, 700, 480","INSERT INTO products (name, price, stock) VALUES ('Laptop', 700, 480);"
+Change price to 1600 in products where name is Desk Chair,UPDATE products SET price = '1600' WHERE name = 'Desk' Chair;
+Change department to Engineering in employees where salary is 110000,UPDATE employees SET department = 'Engineering' WHERE salary = '110000';
+Remove records from products where price is less than 600,DELETE FROM products WHERE price < 600;
+List all employees where name is greater than Jane Smith,SELECT * FROM employees WHERE name > Jane Smith;
+Change total amount to 1550 in orders where total amount is 4900,UPDATE orders SET total_amount = '1550' WHERE total_amount = '4900';
+List all order items where order id is greater than 14,SELECT * FROM order_items WHERE order_id > 14;
+List all products sorted by stock,SELECT * FROM products ORDER BY stock;
+Get department and count of records from employees grouped by department having count greater than 9,"SELECT department, COUNT(*) FROM employees GROUP BY department HAVING COUNT(*) > 9;"
+Change order date to 2022-03-20 in orders where customer id is 25,UPDATE orders SET order_date = '2022-03-20' WHERE customer_id = '25';
+List all customers sorted by signup date,SELECT * FROM customers ORDER BY signup_date;
+Change salary to 95000 in employees where salary is 100000,UPDATE employees SET salary = '95000' WHERE salary = '100000';
+Change customer id to 25 in orders where total amount is 1300,UPDATE orders SET customer_id = '25' WHERE total_amount = '1300';
+"Add a new record to the products with values Keyboard, 1300, 20","INSERT INTO products (name, price, stock) VALUES ('Keyboard', 1300, 20);"
+"Add a new record to the orders with values 23, 1950, 2022-02-14","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (23, 1950, '2022-02-14');"
+Get name and count of records from products grouped by name having count greater than 8,"SELECT name, COUNT(*) FROM products GROUP BY name HAVING COUNT(*) > 8;"
+Remove records from products where stock is less than 120,DELETE FROM products WHERE stock < 120;
+"Add a new record to the products with values Laptop, 1200, 490","INSERT INTO products (name, price, stock) VALUES ('Laptop', 1200, 490);"
+Change price to 1000 in products where id is 1,UPDATE products SET price = '1000' WHERE id = '1';
+List all products where price is greater than 100,SELECT * FROM products WHERE price > 100;
+Change age to 41 in employees where id is 1,UPDATE employees SET age = '41' WHERE id = '1';
+Get quantity and count of records from order items grouped by quantity having count greater than 8,"SELECT quantity, COUNT(*) FROM order_items GROUP BY quantity HAVING COUNT(*) > 8;"
+"Add a new record to the employees with values Bob Lee, 39, Marketing, 65000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 39, 'Marketing', 65000);"
+Remove records from orders where order date is less than 2022-02-14,DELETE FROM orders WHERE order_date < 2022-02-14;
+Change salary to 70000 in employees where age is 28,UPDATE employees SET salary = '70000' WHERE age = '28';
+"Add a new record to the products with values Desk Chair, 500, 240","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 500, 240);"
+"Add a new record to the employees with values John Doe, 32, Finance, 80000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 32, 'Finance', 80000);"
+List all products where price is greater than 1400,SELECT * FROM products WHERE price > 1400;
+"Add a new record to the customers with values Helen Martin, helen.martin@example.com, 2020-07-23","INSERT INTO customers (name, email, signup_date) VALUES ('Helen Martin', 'helen.martin@example.com', '2020-07-23');"
+Change salary to 90000 in employees where name is Bob Lee,UPDATE employees SET salary = '90000' WHERE name = 'Bob' Lee;
+List all order items where quantity is greater than 19,SELECT * FROM order_items WHERE quantity > 19;
+List all orders,SELECT * FROM orders;
+List all products where stock is greater than 390,SELECT * FROM products WHERE stock > 390;
+Remove records from orders where customer id is less than 32,DELETE FROM orders WHERE customer_id < 32;
+Get quantity and count of records from order items grouped by quantity having count greater than 2,"SELECT quantity, COUNT(*) FROM order_items GROUP BY quantity HAVING COUNT(*) > 2;"
+"Add a new record to the customers with values Helen Martin, frank.harris@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('Helen Martin', 'frank.harris@example.com', '2021-11-05');"
+"Add a new record to the customers with values Helen Martin, grace.lee@example.com, 2020-07-23","INSERT INTO customers (name, email, signup_date) VALUES ('Helen Martin', 'grace.lee@example.com', '2020-07-23');"
+Change customer id to 39 in orders where order date is 2022-04-25,UPDATE orders SET customer_id = '39' WHERE order_date = '2022-04-25';
+Get the total order date from orders,SELECT SUM(order_date) FROM orders;
+Change age to 25 in employees where age is 30,UPDATE employees SET age = '25' WHERE age = '30';
+Change order date to 2022-02-14 in orders where customer id is 11,UPDATE orders SET order_date = ''2022-02-14'' WHERE customer_id = '11';
+Remove records from employees where salary is less than 35000,DELETE FROM employees WHERE salary < 35000;
+Change name to Bob Lee in employees where department is Engineering,UPDATE employees SET name = 'Bob' Lee WHERE department = 'Engineering';
+Get price and count of records from products grouped by price having count greater than 3,"SELECT price, COUNT(*) FROM products GROUP BY price HAVING COUNT(*) > 3;"
+"Add a new record to the products with values Smartphone, 1600, 90","INSERT INTO products (name, price, stock) VALUES ('Smartphone', 1600, 90);"
+"Add a new record to the customers with values Emma Wilson, helen.martin@example.com, 2022-03-10","INSERT INTO customers (name, email, signup_date) VALUES ('Emma Wilson', 'helen.martin@example.com', '2022-03-10');"
+List all products where stock is greater than 260,SELECT * FROM products WHERE stock > 260;
+"Add a new record to the products with values Laptop, 300, 360","INSERT INTO products (name, price, stock) VALUES ('Laptop', 300, 360);"
+List all orders where total amount is greater than 3300,SELECT * FROM orders WHERE total_amount > 3300;
+Get signup date and count of records from customers grouped by signup date having count greater than 3,"SELECT signup_date, COUNT(*) FROM customers GROUP BY signup_date HAVING COUNT(*) > 3;"
+"Add a new record to the orders with values 43, 2850, 2022-01-10","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (43, 2850, '2022-01-10');"
+List all order items where order id is greater than 71,SELECT * FROM order_items WHERE order_id > 71;
+"Add a new record to the employees with values Jane Smith, 30, Finance, 50000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 30, 'Finance', 50000);"
+Remove records from employees where age is less than 25,DELETE FROM employees WHERE age < 25;
+Remove records from products where price is less than 300,DELETE FROM products WHERE price < 300;
+Change stock to 310 in products where name is Desk Chair,UPDATE products SET stock = '310' WHERE name = 'Desk' Chair;
+Change name to Smartphone in products where name is Smartphone,UPDATE products SET name = 'Smartphone' WHERE name = 'Smartphone';
+Remove records from employees where age is less than 30,DELETE FROM employees WHERE age < 30;
+List all products where price is greater than 1600,SELECT * FROM products WHERE price > 1600;
+Change customer id to 16 in orders where order date is 2022-02-14,UPDATE orders SET customer_id = '16' WHERE order_date = '2022-02-14';
+Change name to Bob Lee in employees where id is 1,UPDATE employees SET name = 'Bob' Lee WHERE id = '1';
+Remove records from employees where salary is less than 75000,DELETE FROM employees WHERE salary < 75000;
+"Add a new record to the customers with values Helen Martin, frank.harris@example.com, 2020-12-30","INSERT INTO customers (name, email, signup_date) VALUES ('Helen Martin', 'frank.harris@example.com', '2020-12-30');"
+Remove records from orders where customer id is less than 50,DELETE FROM orders WHERE customer_id < 50;
+Get order id and count of records from order items grouped by order id having count greater than 5,"SELECT order_id, COUNT(*) FROM order_items GROUP BY order_id HAVING COUNT(*) > 5;"
+List all employees where salary is greater than 110000,SELECT * FROM employees WHERE salary > 110000;
+"Add a new record to the employees with values John Doe, 49, Sales, 105000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 49, 'Sales', 105000);"
+Change name to Alice Johnson in employees where department is HR,UPDATE employees SET name = 'Alice' Johnson WHERE department = 'HR';
+Get department and count of records from employees grouped by department having count greater than 6,"SELECT department, COUNT(*) FROM employees GROUP BY department HAVING COUNT(*) > 6;"
+Change name to Laptop in products where stock is 150,UPDATE products SET name = 'Laptop' WHERE stock = '150';
+List all order items where order id is greater than 10,SELECT * FROM order_items WHERE order_id > 10;
+"Add a new record to the employees with values John Doe, 27, Marketing, 110000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 27, 'Marketing', 110000);"
+Get signup date and count of records from customers grouped by signup date having count greater than 5,"SELECT signup_date, COUNT(*) FROM customers GROUP BY signup_date HAVING COUNT(*) > 5;"
+Change name to Alice Johnson in employees where salary is 90000,UPDATE employees SET name = 'Alice' Johnson WHERE salary = '90000';
+"Add a new record to the orders with values 19, 2250, 2022-05-30","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (19, 2250, '2022-05-30');"
+Remove records from orders where customer id is less than 29,DELETE FROM orders WHERE customer_id < 29;
+List all orders where total amount is greater than 3400,SELECT * FROM orders WHERE total_amount > 3400;
+Change stock to 70 in products where name is Desk Chair,UPDATE products SET stock = '70' WHERE name = 'Desk' Chair;
+Get total amount and count of records from orders grouped by total amount having count greater than 8,"SELECT total_amount, COUNT(*) FROM orders GROUP BY total_amount HAVING COUNT(*) > 8;"
+List all customers where signup date is greater than 2020-12-30,SELECT * FROM customers WHERE signup_date > 2020-12-30;
+Remove records from products where stock is less than 130,DELETE FROM products WHERE stock < 130;
+"Add a new record to the employees with values Jane Smith, 55, HR, 45000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 55, 'HR', 45000);"
+"Add a new record to the orders with values 30, 800, 2022-05-30","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (30, 800, '2022-05-30');"
+"Add a new record to the employees with values Carol King, 41, Engineering, 70000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 41, 'Engineering', 70000);"
+List all order items where product id is greater than 17,SELECT * FROM order_items WHERE product_id > 17;
+"Add a new record to the orders with values 1, 700, 2022-02-14","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (1, 700, '2022-02-14');"
+"Add a new record to the products with values Monitor, 700, 90","INSERT INTO products (name, price, stock) VALUES ('Monitor', 700, 90);"
+Get the total email from customers,SELECT SUM(email) FROM customers;
+Change order date to 2022-02-14 in orders where customer id is 7,UPDATE orders SET order_date = ''2022-02-14'' WHERE customer_id = '7';
+Change stock to 10 in products where price is 700,UPDATE products SET stock = '10' WHERE price = '700';
+"Add a new record to the customers with values Emma Wilson, david.brown@example.com, 2020-12-30","INSERT INTO customers (name, email, signup_date) VALUES ('Emma Wilson', 'david.brown@example.com', '2020-12-30');"
+List all orders where customer id is greater than 9,SELECT * FROM orders WHERE customer_id > 9;
+List all orders where total amount is greater than 2950,SELECT * FROM orders WHERE total_amount > 2950;
+List all products where price is greater than 900,SELECT * FROM products WHERE price > 900;
+"Add a new record to the orders with values 21, 2250, 2022-02-14","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (21, 2250, '2022-02-14');"
+Change department to HR in employees where age is 31,UPDATE employees SET department = 'HR' WHERE age = '31';
+Remove records from orders where total amount is less than 4750,DELETE FROM orders WHERE total_amount < 4750;
+Change name to Desk Chair in products where id is 1,UPDATE products SET name = 'Desk' Chair WHERE id = '1';
+Remove records from employees where department is less than Marketing,DELETE FROM employees WHERE department < Marketing;
+List all employees where salary is greater than 40000,SELECT * FROM employees WHERE salary > 40000;
+Remove records from products where price is less than 1600,DELETE FROM products WHERE price < 1600;
+List all order items where order id is greater than 53,SELECT * FROM order_items WHERE order_id > 53;
+"Add a new record to the customers with values Frank Harris, grace.lee@example.com, 2020-12-30","INSERT INTO customers (name, email, signup_date) VALUES ('Frank Harris', 'grace.lee@example.com', '2020-12-30');"
+Get price and count of records from products grouped by price having count greater than 5,"SELECT price, COUNT(*) FROM products GROUP BY price HAVING COUNT(*) > 5;"
+Get signup date and count of records from customers grouped by signup date having count greater than 9,"SELECT signup_date, COUNT(*) FROM customers GROUP BY signup_date HAVING COUNT(*) > 9;"
+"Add a new record to the orders with values 40, 2750, 2022-01-10","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (40, 2750, '2022-01-10');"
+"Add a new record to the products with values Desk Chair, 1300, 370","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 1300, 370);"
+"Add a new record to the employees with values Alice Johnson, 60, HR, 55000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 60, 'HR', 55000);"
+"Add a new record to the products with values Keyboard, 1100, 440","INSERT INTO products (name, price, stock) VALUES ('Keyboard', 1100, 440);"
+Change total amount to 950 in orders where order date is 2022-01-10,UPDATE orders SET total_amount = '950' WHERE order_date = '2022-01-10';
+Get email and count of records from customers grouped by email having count greater than 9,"SELECT email, COUNT(*) FROM customers GROUP BY email HAVING COUNT(*) > 9;"
+Get the total price from products,SELECT SUM(price) FROM products;
+Change department to Sales in employees where id is 1,UPDATE employees SET department = 'Sales' WHERE id = '1';
+Get email and count of records from customers grouped by email having count greater than 1,"SELECT email, COUNT(*) FROM customers GROUP BY email HAVING COUNT(*) > 1;"
+List all products where stock is greater than 380,SELECT * FROM products WHERE stock > 380;
+Remove records from employees where name is less than Bob Lee,DELETE FROM employees WHERE name < Bob Lee;
+List all products where price is greater than 300,SELECT * FROM products WHERE price > 300;
+Remove records from products where name is less than Laptop,DELETE FROM products WHERE name < Laptop;
+"Add a new record to the products with values Desk Chair, 1100, 190","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 1100, 190);"
+Change price to 800 in products where name is Monitor,UPDATE products SET price = '800' WHERE name = 'Monitor';
+"Add a new record to the products with values Monitor, 900, 280","INSERT INTO products (name, price, stock) VALUES ('Monitor', 900, 280);"
+"Add a new record to the customers with values Helen Martin, emma.wilson@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('Helen Martin', 'emma.wilson@example.com', '2021-11-05');"
+Remove records from products where stock is less than 410,DELETE FROM products WHERE stock < 410;
+"Add a new record to the orders with values 16, 3700, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (16, 3700, '2022-04-25');"
+Get stock and count of records from products grouped by stock having count greater than 4,"SELECT stock, COUNT(*) FROM products GROUP BY stock HAVING COUNT(*) > 4;"
+Remove records from products where stock is less than 210,DELETE FROM products WHERE stock < 210;
+Change salary to 70000 in employees where name is John Doe,UPDATE employees SET salary = '70000' WHERE name = 'John' Doe;
+List all order items where product id is greater than 9,SELECT * FROM order_items WHERE product_id > 9;
+Change stock to 250 in products where price is 1700,UPDATE products SET stock = '250' WHERE price = '1700';
+"Add a new record to the orders with values 46, 4900, 2022-02-14","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (46, 4900, '2022-02-14');"
+List all order items where order id is greater than 12,SELECT * FROM order_items WHERE order_id > 12;
+"Add a new record to the employees with values Jane Smith, 30, HR, 70000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 30, 'HR', 70000);"
+Change name to Alice Johnson in employees where department is Engineering,UPDATE employees SET name = 'Alice' Johnson WHERE department = 'Engineering';
+List all employees where age is greater than 50,SELECT * FROM employees WHERE age > 50;
+Remove records from orders where total amount is less than 2600,DELETE FROM orders WHERE total_amount < 2600;
+Change total amount to 1400 in orders where order date is 2022-03-20,UPDATE orders SET total_amount = '1400' WHERE order_date = '2022-03-20';
+Change total amount to 2800 in orders where total amount is 1350,UPDATE orders SET total_amount = '2800' WHERE total_amount = '1350';
+List all orders where customer id is greater than 46,SELECT * FROM orders WHERE customer_id > 46;
+"Add a new record to the orders with values 19, 4000, 2022-05-30","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (19, 4000, '2022-05-30');"
+Remove records from products where stock is less than 460,DELETE FROM products WHERE stock < 460;
+Get the total name from employees,SELECT SUM(total_amount) FROM employees;
+List all products where stock is greater than 10,SELECT * FROM products WHERE stock > 10;
+Remove records from orders where customer id is less than 39,DELETE FROM orders WHERE customer_id < 39;
+Get department and count of records from employees grouped by department having count greater than 2,"SELECT department, COUNT(*) FROM employees GROUP BY department HAVING COUNT(*) > 2;"
+Change department to Engineering in employees where age is 48,UPDATE employees SET department = 'Engineering' WHERE age = '48';
+Change salary to 75000 in employees where salary is 70000,UPDATE employees SET salary = '75000' WHERE salary = '70000';
+Change price to 400 in products where stock is 220,UPDATE products SET price = '400' WHERE stock = '220';
+List all order items where order id is greater than 65,SELECT * FROM order_items WHERE order_id > 65;
+Change customer id to 18 in orders where order date is 2022-03-20,UPDATE orders SET customer_id = '18' WHERE order_date = '2022-03-20';
+Change name to Bob Lee in employees where age is 25,UPDATE employees SET name = 'Bob' Lee WHERE age = '25';
+List all orders where order date is greater than 2022-04-25,SELECT * FROM orders WHERE order_date > 2022-04-25;
+Remove records from orders where customer id is less than 6,DELETE FROM orders WHERE customer_id < 6;
+List all employees where salary is greater than 75000,SELECT * FROM employees WHERE salary > 75000;
+Change salary to 90000 in employees where department is Sales,UPDATE employees SET salary = '90000' WHERE department = 'Sales';
+List all orders where total amount is greater than 4100,SELECT * FROM orders WHERE total_amount > 4100;
+"Add a new record to the products with values Keyboard, 1400, 480","INSERT INTO products (name, price, stock) VALUES ('Keyboard', 1400, 480);"
+"Add a new record to the orders with values 27, 1500, 2022-01-10","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (27, 1500, '2022-01-10');"
+Remove records from products where price is less than 1500,DELETE FROM products WHERE price < 1500;
+Remove records from orders where customer id is less than 9,DELETE FROM orders WHERE customer_id < 9;
+Change name to Laptop in products where stock is 170,UPDATE products SET name = 'Laptop' WHERE stock = '170';
+"Add a new record to the employees with values John Doe, 45, Finance, 115000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 45, 'Finance', 115000);"
+"Add a new record to the products with values Monitor, 1300, 90","INSERT INTO products (name, price, stock) VALUES ('Monitor', 1300, 90);"
+List all orders where total amount is greater than 600,SELECT * FROM orders WHERE total_amount > 600;
+List all order items where product id is greater than 20,SELECT * FROM order_items WHERE product_id > 20;
+"Add a new record to the products with values Laptop, 800, 70","INSERT INTO products (name, price, stock) VALUES ('Laptop', 800, 70);"
+"Add a new record to the orders with values 10, 3850, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (10, 3850, '2022-03-20');"
+Change name to Jane Smith in employees where salary is 100000,UPDATE employees SET name = 'Jane' Smith WHERE salary = '100000';
+Change order date to 2022-04-25 in orders where id is 1,UPDATE orders SET order_date = '2022-04-25' WHERE id = '1';
+Remove records from orders where customer id is less than 15,DELETE FROM orders WHERE customer_id < 15;
+"Add a new record to the products with values Laptop, 900, 130","INSERT INTO products (name, price, stock) VALUES ('Laptop', 900, 130);"
+Change total amount to 450 in orders where order date is 2022-01-10,UPDATE orders SET total_amount = '450' WHERE order_date = '2022-01-10';
+Change name to Jane Smith in employees where department is Finance,UPDATE employees SET name = 'Jane' Smith WHERE department = 'Finance';
+Remove records from products where stock is less than 280,DELETE FROM products WHERE stock < 280;
+Change customer id to 44 in orders where total amount is 3100,UPDATE orders SET customer_id = '44' WHERE total_amount = '3100';
+"Add a new record to the orders with values 11, 250, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (11, 250, '2022-03-20');"
+Get signup date and count of records from customers grouped by signup date having count greater than 6,"SELECT signup_date, COUNT(*) FROM customers GROUP BY signup_date HAVING COUNT(*) > 6;"
+"Add a new record to the products with values Smartphone, 1500, 240","INSERT INTO products (name, price, stock) VALUES ('Smartphone', 1500, 240);"
+Change stock to 250 in products where id is 1,UPDATE products SET stock = '250' WHERE id = '1';
+List all employees where age is greater than 46,SELECT * FROM employees WHERE age > 46;
+Remove records from employees where salary is less than 80000,DELETE FROM employees WHERE salary < 80000;
+Change price to 1200 in products where name is Smartphone,UPDATE products SET price = '1200' WHERE name = 'Smartphone';
+Get product id and count of records from order items grouped by product id having count greater than 9,"SELECT product_id, COUNT(*) FROM order_items GROUP BY product_id HAVING COUNT(*) > 9;"
+Change age to 41 in employees where department is Marketing,UPDATE employees SET age = '41' WHERE department = 'Marketing';
+Remove records from products where price is less than 400,DELETE FROM products WHERE price < 400;
+Change name to Bob Lee in employees where name is Bob Lee,UPDATE employees SET name = 'Bob' Lee WHERE name = 'Bob' Lee;
+List all order items where quantity is greater than 8,SELECT * FROM order_items WHERE quantity > 8;
+"Add a new record to the customers with values Frank Harris, emma.wilson@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('Frank Harris', 'emma.wilson@example.com', '2021-11-05');"
+Change salary to 80000 in employees where id is 1,UPDATE employees SET salary = '80000' WHERE id = '1';
+Change name to Alice Johnson in employees where department is Marketing,UPDATE employees SET name = 'Alice' Johnson WHERE department = 'Marketing';
+Get product id and count of records from order items grouped by product id having count greater than 4,"SELECT product_id, COUNT(*) FROM order_items GROUP BY product_id HAVING COUNT(*) > 4;"
+"Add a new record to the products with values Keyboard, 1500, 460","INSERT INTO products (name, price, stock) VALUES ('Keyboard', 1500, 460);"
+Remove records from employees where name is less than Carol King,DELETE FROM employees WHERE name < Carol King;
+"Add a new record to the employees with values John Doe, 28, Finance, 95000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 28, 'Finance', 95000);"
+Change order date to 2022-05-30 in orders where customer id is 25,UPDATE orders SET order_date = '2022-05-30' WHERE customer_id = '25';
+"Add a new record to the employees with values Jane Smith, 50, Sales, 40000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 50, 'Sales', 40000);"
+Get name and count of records from products grouped by name having count greater than 9,"SELECT name, COUNT(*) FROM products GROUP BY name HAVING COUNT(*) > 9;"
+"Add a new record to the employees with values Jane Smith, 28, Marketing, 70000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 28, 'Marketing', 70000);"
+Change total amount to 2200 in orders where order date is 2022-05-30,UPDATE orders SET total_amount = '2200' WHERE order_date = '2022-05-30';
+Change department to Sales in employees where name is Bob Lee,UPDATE employees SET department = 'Sales' WHERE name = 'Bob' Lee;
+List all products where stock is greater than 110,SELECT * FROM products WHERE stock > 110;
+"Add a new record to the products with values Desk Chair, 600, 280","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 600, 280);"
+List all order items where order id is greater than 86,SELECT * FROM order_items WHERE order_id > 86;
+"Add a new record to the employees with values Alice Johnson, 48, Sales, 95000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 48, 'Sales', 95000);"
+Get the total signup date from customers,SELECT SUM(signup_date) FROM customers;
+Remove records from employees where age is less than 50,DELETE FROM employees WHERE age < 50;
+List all employees where age is greater than 25,SELECT * FROM employees WHERE age > 25;
+List all products where price is greater than 2000,SELECT * FROM products WHERE price > 2000;
+"Add a new record to the orders with values 23, 50, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (23, 50, '2022-03-20');"
+List all products where stock is greater than 230,SELECT * FROM products WHERE stock > 230;
+List all employees where department is greater than Finance,SELECT * FROM employees WHERE department > Finance;
+"Add a new record to the customers with values David Brown, emma.wilson@example.com, 2022-03-10","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'emma.wilson@example.com', '2022-03-10');"
+"Add a new record to the orders with values 38, 4500, 2022-05-30","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (38, 4500, '2022-05-30');"
+Get age and count of records from employees grouped by age having count greater than 7,"SELECT age, COUNT(*) FROM employees GROUP BY age HAVING COUNT(*) > 7;"
+Change order date to 2022-01-10 in orders where total amount is 4400,UPDATE orders SET order_date = '2022-01-10' WHERE total_amount = '4400';
+"Add a new record to the orders with values 42, 2150, 2022-01-10","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (42, 2150, '2022-01-10');"
+"Add a new record to the products with values Smartphone, 2000, 230","INSERT INTO products (name, price, stock) VALUES ('Smartphone', 2000, 230);"
+Get the total quantity from order items,SELECT SUM(quantity) FROM order_items;
+"Add a new record to the orders with values 41, 2700, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (41, 2700, '2022-04-25');"
+List all orders sorted by customer id,SELECT * FROM orders ORDER BY customer_id;
+List all employees where age is greater than 42,SELECT * FROM employees WHERE age > 42;
+"Add a new record to the products with values Laptop, 300, 440","INSERT INTO products (name, price, stock) VALUES ('Laptop', 300, 440);"
+"Add a new record to the employees with values Carol King, 26, HR, 105000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 26, 'HR', 105000);"
+Change order date to 2022-05-30 in orders where customer id is 47,UPDATE orders SET order_date = '2022-05-30' WHERE customer_id = '47';
+List all orders where customer id is greater than 31,SELECT * FROM orders WHERE customer_id > 31;
+Change price to 1800 in products where stock is 60,UPDATE products SET price = '1800' WHERE stock = '60';
+Change customer id to 9 in orders where id is 1,UPDATE orders SET customer_id = '9' WHERE id = '1';
+"Add a new record to the orders with values 9, 2900, 2022-05-30","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (9, 2900, '2022-05-30');"
+Remove records from orders where total amount is less than 1650,DELETE FROM orders WHERE total_amount < 1650;
+Get email and count of records from customers grouped by email having count greater than 4,"SELECT email, COUNT(*) FROM customers GROUP BY email HAVING COUNT(*) > 4;"
+List all order items where quantity is greater than 2,SELECT * FROM order_items WHERE quantity > 2;
+Get order date and count of records from orders grouped by order date having count greater than 8,"SELECT order_date, COUNT(*) FROM orders GROUP BY order_date HAVING COUNT(*) > 8;"
+Get total amount and count of records from orders grouped by total amount having count greater than 3,"SELECT total_amount, COUNT(*) FROM orders GROUP BY total_amount HAVING COUNT(*) > 3;"
+List all order items where order id is greater than 19,SELECT * FROM order_items WHERE order_id > 19;
+Change salary to 45000 in employees where name is John Doe,UPDATE employees SET salary = '45000' WHERE name = 'John' Doe;
+"Add a new record to the employees with values John Doe, 50, Marketing, 85000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 50, 'Marketing', 85000);"
+Change customer id to 48 in orders where id is 1,UPDATE orders SET customer_id = '48' WHERE id = '1';
+"Add a new record to the products with values Smartphone, 800, 460","INSERT INTO products (name, price, stock) VALUES ('Smartphone', 800, 460);"
+List all order items where product id is greater than 10,SELECT * FROM order_items WHERE product_id > 10;
+Remove records from orders where customer id is less than 24,DELETE FROM orders WHERE customer_id < 24;
+Change department to HR in employees where name is Bob Lee,UPDATE employees SET department = 'HR' WHERE name = 'Bob' Lee;
+Change stock to 10 in products where price is 800,UPDATE products SET stock = '10' WHERE price = '800';
+Remove records from employees where salary is less than 30000,DELETE FROM employees WHERE salary < 30000;
+Remove records from employees where name is less than John Doe,DELETE FROM employees WHERE name < John Doe;
+Change name to Keyboard in products where name is Laptop,UPDATE products SET name = 'Keyboard' WHERE name = 'Laptop';
+Remove records from products where price is less than 100,DELETE FROM products WHERE price < 100;
+"Add a new record to the employees with values Bob Lee, 60, Sales, 75000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 60, 'Sales', 75000);"
+List all products where price is greater than 1200,SELECT * FROM products WHERE price > 1200;
+List all orders where total amount is greater than 3150,SELECT * FROM orders WHERE total_amount > 3150;
+List all orders sorted by order date,SELECT * FROM orders ORDER BY order_date;
+Change age to 58 in employees where department is Sales,UPDATE employees SET age = '58' WHERE department = 'Sales';
+List all products where stock is greater than 50,SELECT * FROM products WHERE stock > 50;
+List all order items where quantity is greater than 4,SELECT * FROM order_items WHERE quantity > 4;
+Get order id and count of records from order items grouped by order id having count greater than 2,"SELECT order_id, COUNT(*) FROM order_items GROUP BY order_id HAVING COUNT(*) > 2;"
+Change stock to 130 in products where stock is 120,UPDATE products SET stock = '130' WHERE stock = '120';
+Get product id and count of records from order items grouped by product id having count greater than 1,"SELECT product_id, COUNT(*) FROM order_items GROUP BY product_id HAVING COUNT(*) > 1;"
+List all employees where salary is greater than 80000,SELECT * FROM employees WHERE salary > 80000;
+Change total amount to 2900 in orders where total amount is 2600,UPDATE orders SET total_amount = '2900' WHERE total_amount = '2600';
+Change price to 1400 in products where price is 100,UPDATE products SET price = '1400' WHERE price = '100';
+Get email and count of records from customers grouped by email having count greater than 6,"SELECT email, COUNT(*) FROM customers GROUP BY email HAVING COUNT(*) > 6;"
+Change order date to 2022-02-14 in orders where customer id is 27,UPDATE orders SET order_date = ''2022-02-14'' WHERE customer_id = '27';
+Change order date to 2022-04-25 in orders where order date is 2022-01-10,UPDATE orders SET order_date = '2022-04-25' WHERE order_date = '2022-01-10';
+Remove records from orders where total amount is less than 4900,DELETE FROM orders WHERE total_amount < 4900;
+List all orders where customer id is greater than 20,SELECT * FROM orders WHERE customer_id > 20;
+"Add a new record to the customers with values Helen Martin, grace.lee@example.com, 2022-03-10","INSERT INTO customers (name, email, signup_date) VALUES ('Helen Martin', 'grace.lee@example.com', '2022-03-10');"
+"Add a new record to the employees with values Carol King, 36, HR, 65000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 36, 'HR', 65000);"
+List all orders where customer id is greater than 44,SELECT * FROM orders WHERE customer_id > 44;
+List all orders where total amount is greater than 1300,SELECT * FROM orders WHERE total_amount > 1300;
+List orders with customer names,"SELECT o.id, c.name, o.total_amount FROM orders o JOIN customers c ON o.customer_id = c.id;"
+Remove records from employees where age is less than 52,DELETE FROM employees WHERE age < 52;
+Change salary to 35000 in employees where id is 1,UPDATE employees SET salary = '35000' WHERE id = '1';
+"Add a new record to the orders with values 27, 3700, 2022-02-14","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (27, 3700, '2022-02-14');"
+Change price to 1700 in products where name is Keyboard,UPDATE products SET price = '1700' WHERE name = 'Keyboard';
+List all employees where department is greater than Marketing,SELECT * FROM employees WHERE department > Marketing;
+"Add a new record to the employees with values Jane Smith, 25, Marketing, 50000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 25, 'Marketing', 50000);"
+List all products where stock is greater than 60,SELECT * FROM products WHERE stock > 60;
+Remove records from employees where salary is less than 90000,DELETE FROM employees WHERE salary < 90000;
+List all products where price is greater than 400,SELECT * FROM products WHERE price > 400;
+Get order id and count of records from order items grouped by order id having count greater than 7,"SELECT order_id, COUNT(*) FROM order_items GROUP BY order_id HAVING COUNT(*) > 7;"
+"Add a new record to the orders with values 12, 2650, 2022-02-14","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (12, 2650, '2022-02-14');"
+Change stock to 230 in products where name is Monitor,UPDATE products SET stock = '230' WHERE name = 'Monitor';
+Remove records from orders where total amount is less than 4600,DELETE FROM orders WHERE total_amount < 4600;
+Get signup date and count of records from customers grouped by signup date having count greater than 7,"SELECT signup_date, COUNT(*) FROM customers GROUP BY signup_date HAVING COUNT(*) > 7;"
+Change order date to 2022-05-30 in orders where id is 1,UPDATE orders SET order_date = '2022-05-30' WHERE id = '1';
+Change price to 1100 in products where price is 500,UPDATE products SET price = '1100' WHERE price = '500';
+Get product id and count of records from order items grouped by product id having count greater than 10,"SELECT product_id, COUNT(*) FROM order_items GROUP BY product_id HAVING COUNT(*) > 10;"
+List all orders where customer id is greater than 5,SELECT * FROM orders WHERE customer_id > 5;
+"Add a new record to the orders with values 2, 2350, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (2, 2350, '2022-04-25');"
+Remove records from orders where customer id is less than 34,DELETE FROM orders WHERE customer_id < 34;
+"Add a new record to the employees with values Carol King, 50, Finance, 45000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 50, 'Finance', 45000);"
+List all customers where name is greater than David Brown,SELECT * FROM customers WHERE name > David Brown;
+"Add a new record to the products with values Laptop, 1300, 30","INSERT INTO products (name, price, stock) VALUES ('Laptop', 1300, 30);"
+"Add a new record to the employees with values Carol King, 37, Engineering, 60000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 37, 'Engineering', 60000);"
+"Add a new record to the employees with values Jane Smith, 57, Engineering, 90000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 57, 'Engineering', 90000);"
+Change name to Bob Lee in employees where age is 51,UPDATE employees SET name = 'Bob' Lee WHERE age = '51';
+"Add a new record to the customers with values David Brown, emma.wilson@example.com, 2020-12-30","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'emma.wilson@example.com', '2020-12-30');"
+Remove records from employees where department is less than Finance,DELETE FROM employees WHERE department < Finance;
+List all employees where salary is greater than 65000,SELECT * FROM employees WHERE salary > 65000;
+Change name to Keyboard in products where name is Monitor,UPDATE products SET name = 'Keyboard' WHERE name = 'Monitor';
+Get the total salary from employees,SELECT SUM(salary) FROM employees;
+"Add a new record to the employees with values Carol King, 40, HR, 110000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 40, 'HR', 110000);"
+Change salary to 55000 in employees where salary is 110000,UPDATE employees SET salary = '55000' WHERE salary = '110000';
+Remove records from products where stock is less than 480,DELETE FROM products WHERE stock < 480;
+"Add a new record to the employees with values John Doe, 42, Engineering, 120000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 42, 'Engineering', 120000);"
+Change price to 800 in products where id is 1,UPDATE products SET price = '800' WHERE id = '1';
+"Add a new record to the orders with values 10, 3150, 2022-02-14","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (10, 3150, '2022-02-14');"
+"Add a new record to the orders with values 4, 1150, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (4, 1150, '2022-04-25');"
+Change customer id to 26 in orders where total amount is 2200,UPDATE orders SET customer_id = '26' WHERE total_amount = '2200';
+Change customer id to 30 in orders where customer id is 33,UPDATE orders SET customer_id = '30' WHERE customer_id = '33';
+List all employees where salary is greater than 90000,SELECT * FROM employees WHERE salary > 90000;
+"Add a new record to the orders with values 18, 4900, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (18, 4900, '2022-04-25');"
+Remove records from orders where customer id is less than 20,DELETE FROM orders WHERE customer_id < 20;
+List all products where stock is greater than 190,SELECT * FROM products WHERE stock > 190;
+Get name and count of records from customers grouped by name having count greater than 10,"SELECT name, COUNT(*) FROM customers GROUP BY name HAVING COUNT(*) > 10;"
+Change salary to 90000 in employees where age is 39,UPDATE employees SET salary = '90000' WHERE age = '39';
+Change order date to 2022-02-14 in orders where total amount is 2800,UPDATE orders SET order_date = ''2022-02-14'' WHERE total_amount = '2800';
+"Add a new record to the products with values Laptop, 2000, 40","INSERT INTO products (name, price, stock) VALUES ('Laptop', 2000, 40);"
+Get signup date and count of records from customers grouped by signup date having count greater than 1,"SELECT signup_date, COUNT(*) FROM customers GROUP BY signup_date HAVING COUNT(*) > 1;"
+Change total amount to 2900 in orders where customer id is 31,UPDATE orders SET total_amount = '2900' WHERE customer_id = '31';
+Get total amount and count of records from orders grouped by total amount having count greater than 9,"SELECT total_amount, COUNT(*) FROM orders GROUP BY total_amount HAVING COUNT(*) > 9;"
+Get the total order id from order items,SELECT SUM(order_id) FROM order_items;
+Get product id and count of records from order items grouped by product id having count greater than 3,"SELECT product_id, COUNT(*) FROM order_items GROUP BY product_id HAVING COUNT(*) > 3;"
+List all products where price is greater than 1300,SELECT * FROM products WHERE price > 1300;
+Change total amount to 950 in orders where total amount is 950,UPDATE orders SET total_amount = '950' WHERE total_amount = '950';
+List all products,SELECT * FROM products;
+Get department and count of records from employees grouped by department having count greater than 7,"SELECT department, COUNT(*) FROM employees GROUP BY department HAVING COUNT(*) > 7;"
+Remove records from products where price is less than 500,DELETE FROM products WHERE price < 500;
+"Add a new record to the orders with values 22, 4150, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (22, 4150, '2022-04-25');"
+Get name and count of records from products grouped by name having count greater than 5,"SELECT name, COUNT(*) FROM products GROUP BY name HAVING COUNT(*) > 5;"
+"Add a new record to the employees with values Carol King, 53, Sales, 95000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 53, 'Sales', 95000);"
+"Add a new record to the products with values Smartphone, 1400, 90","INSERT INTO products (name, price, stock) VALUES ('Smartphone', 1400, 90);"
+Get name and count of records from products grouped by name having count greater than 2,"SELECT name, COUNT(*) FROM products GROUP BY name HAVING COUNT(*) > 2;"
+Change salary to 75000 in employees where age is 53,UPDATE employees SET salary = '75000' WHERE age = '53';
+List all order items where order id is greater than 15,SELECT * FROM order_items WHERE order_id > 15;
+"Add a new record to the orders with values 12, 4850, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (12, 4850, '2022-04-25');"
+List all order items where order id is greater than 73,SELECT * FROM order_items WHERE order_id > 73;
+Change stock to 370 in products where stock is 160,UPDATE products SET stock = '370' WHERE stock = '160';
+List all order items where product id is greater than 18,SELECT * FROM order_items WHERE product_id > 18;
+Remove records from products where stock is less than 30,DELETE FROM products WHERE stock < 30;
+"Add a new record to the employees with values Bob Lee, 58, Finance, 110000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 58, 'Finance', 110000);"
+Change salary to 110000 in employees where id is 1,UPDATE employees SET salary = '110000' WHERE id = '1';
+Change total amount to 3750 in orders where id is 1,UPDATE orders SET total_amount = '3750' WHERE id = '1';
+Change age to 48 in employees where age is 27,UPDATE employees SET age = '48' WHERE age = '27';
+"Add a new record to the orders with values 27, 500, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (27, 500, '2022-03-20');"
+Change name to Bob Lee in employees where name is John Doe,UPDATE employees SET name = 'Bob' Lee WHERE name = 'John' Doe;
+Change total amount to 2000 in orders where total amount is 600,UPDATE orders SET total_amount = '2000' WHERE total_amount = '600';
+"Add a new record to the employees with values Carol King, 54, Sales, 60000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 54, 'Sales', 60000);"
+Remove records from products where price is less than 1200,DELETE FROM products WHERE price < 1200;
+List all customers where email is greater than helen.martin@example.com,SELECT * FROM customers WHERE email > helen.martin@example.com;
+"Add a new record to the products with values Smartphone, 1800, 250","INSERT INTO products (name, price, stock) VALUES ('Smartphone', 1800, 250);"
+Change price to 400 in products where stock is 180,UPDATE products SET price = '400' WHERE stock = '180';
+Change name to Desk Chair in products where stock is 430,UPDATE products SET name = 'Desk' Chair WHERE stock = '430';
+Change salary to 95000 in employees where salary is 115000,UPDATE employees SET salary = '95000' WHERE salary = '115000';
+Change age to 32 in employees where id is 1,UPDATE employees SET age = '32' WHERE id = '1';
+"Add a new record to the employees with values Jane Smith, 28, Sales, 35000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 28, 'Sales', 35000);"
+Get the total total amount from orders,SELECT SUM(total_amount) FROM orders;
+"Add a new record to the customers with values Grace Lee, emma.wilson@example.com, 2021-01-15","INSERT INTO customers (name, email, signup_date) VALUES ('Grace Lee', 'emma.wilson@example.com', '2021-01-15');"
+Remove records from employees where salary is less than 85000,DELETE FROM employees WHERE salary < 85000;
+Remove records from products where stock is less than 430,DELETE FROM products WHERE stock < 430;
+"Add a new record to the products with values Smartphone, 500, 100","INSERT INTO products (name, price, stock) VALUES ('Smartphone', 500, 100);"
+"Add a new record to the orders with values 10, 3100, 2022-01-10","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (10, 3100, '2022-01-10');"
+Get age and count of records from employees grouped by age having count greater than 10,"SELECT age, COUNT(*) FROM employees GROUP BY age HAVING COUNT(*) > 10;"
+Change salary to 85000 in employees where salary is 50000,UPDATE employees SET salary = '85000' WHERE salary = '50000';
+Get price and count of records from products grouped by price having count greater than 6,"SELECT price, COUNT(*) FROM products GROUP BY price HAVING COUNT(*) > 6;"
+List all orders where customer id is greater than 42,SELECT * FROM orders WHERE customer_id > 42;
+"Add a new record to the customers with values Helen Martin, david.brown@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('Helen Martin', 'david.brown@example.com', '2021-11-05');"
+Change order date to 2022-05-30 in orders where total amount is 4400,UPDATE orders SET order_date = '2022-05-30' WHERE total_amount = '4400';
+List all products where stock is greater than 100,SELECT * FROM products WHERE stock > 100;
+List all employees sorted by salary,SELECT * FROM employees ORDER BY salary;
+Change name to Laptop in products where name is Laptop,UPDATE products SET name = 'Laptop' WHERE name = 'Laptop';
+"Add a new record to the products with values Desk Chair, 1900, 190","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 1900, 190);"
+List all employees where age is greater than 58,SELECT * FROM employees WHERE age > 58;
+"Add a new record to the customers with values David Brown, david.brown@example.com, 2021-01-15","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'david.brown@example.com', '2021-01-15');"
+Get order id and count of records from order items grouped by order id having count greater than 1,"SELECT order_id, COUNT(*) FROM order_items GROUP BY order_id HAVING COUNT(*) > 1;"
+Change customer id to 24 in orders where id is 1,UPDATE orders SET customer_id = '24' WHERE id = '1';
+List all employees where age is greater than 26,SELECT * FROM employees WHERE age > 26;
+Get email and count of records from customers grouped by email having count greater than 3,"SELECT email, COUNT(*) FROM customers GROUP BY email HAVING COUNT(*) > 3;"
+Get department and count of records from employees grouped by department having count greater than 4,"SELECT department, COUNT(*) FROM employees GROUP BY department HAVING COUNT(*) > 4;"
+"Add a new record to the products with values Smartphone, 1900, 470","INSERT INTO products (name, price, stock) VALUES ('Smartphone', 1900, 470);"
+Remove records from orders where customer id is less than 8,DELETE FROM orders WHERE customer_id < 8;
+"Add a new record to the products with values Desk Chair, 1700, 400","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 1700, 400);"
+Change customer id to 27 in orders where total amount is 550,UPDATE orders SET customer_id = '27' WHERE total_amount = '550';
+Get salary and count of records from employees grouped by salary having count greater than 6,"SELECT salary, COUNT(*) FROM employees GROUP BY salary HAVING COUNT(*) > 6;"
+"Add a new record to the orders with values 32, 950, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (32, 950, '2022-03-20');"
+"Add a new record to the orders with values 44, 4550, 2022-01-10","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (44, 4550, '2022-01-10');"
+Change total amount to 3250 in orders where id is 1,UPDATE orders SET total_amount = '3250' WHERE id = '1';
+Change salary to 75000 in employees where department is Finance,UPDATE employees SET salary = '75000' WHERE department = 'Finance';
+"Add a new record to the employees with values Bob Lee, 43, HR, 55000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 43, 'HR', 55000);"
+"Add a new record to the customers with values Frank Harris, emma.wilson@example.com, 2022-03-10","INSERT INTO customers (name, email, signup_date) VALUES ('Frank Harris', 'emma.wilson@example.com', '2022-03-10');"
+List all employees where age is greater than 38,SELECT * FROM employees WHERE age > 38;
+"Add a new record to the products with values Desk Chair, 800, 320","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 800, 320);"
+"Add a new record to the customers with values Grace Lee, david.brown@example.com, 2020-07-23","INSERT INTO customers (name, email, signup_date) VALUES ('Grace Lee', 'david.brown@example.com', '2020-07-23');"
+Change stock to 210 in products where name is Desk Chair,UPDATE products SET stock = '210' WHERE name = 'Desk' Chair;
+Change age to 26 in employees where id is 1,UPDATE employees SET age = '26' WHERE id = '1';
+Change name to Desk Chair in products where stock is 110,UPDATE products SET name = 'Desk' Chair WHERE stock = '110';
+"Add a new record to the customers with values Frank Harris, grace.lee@example.com, 2022-03-10","INSERT INTO customers (name, email, signup_date) VALUES ('Frank Harris', 'grace.lee@example.com', '2022-03-10');"
+Get name and count of records from customers grouped by name having count greater than 1,"SELECT name, COUNT(*) FROM customers GROUP BY name HAVING COUNT(*) > 1;"
+Remove records from products where stock is less than 450,DELETE FROM products WHERE stock < 450;
+Remove records from products where stock is less than 180,DELETE FROM products WHERE stock < 180;
+"Add a new record to the employees with values John Doe, 59, Sales, 80000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 59, 'Sales', 80000);"
+"Add a new record to the products with values Desk Chair, 1800, 280","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 1800, 280);"
+List all orders where customer id is greater than 35,SELECT * FROM orders WHERE customer_id > 35;
+Get stock and count of records from products grouped by stock having count greater than 1,"SELECT stock, COUNT(*) FROM products GROUP BY stock HAVING COUNT(*) > 1;"
+Get order id and count of records from order items grouped by order id having count greater than 8,"SELECT order_id, COUNT(*) FROM order_items GROUP BY order_id HAVING COUNT(*) > 8;"
+List all orders where total amount is greater than 4200,SELECT * FROM orders WHERE total_amount > 4200;
+Change department to Sales in employees where department is Sales,UPDATE employees SET department = 'Sales' WHERE department = 'Sales';
+Get quantity and count of records from order items grouped by quantity having count greater than 5,"SELECT quantity, COUNT(*) FROM order_items GROUP BY quantity HAVING COUNT(*) > 5;"
+Remove records from products where stock is less than 310,DELETE FROM products WHERE stock < 310;
+List all orders where customer id is greater than 22,SELECT * FROM orders WHERE customer_id > 22;
+Remove records from products where price is less than 1100,DELETE FROM products WHERE price < 1100;
+List all order items where order id is greater than 22,SELECT * FROM order_items WHERE order_id > 22;
+Get order date and count of records from orders grouped by order date having count greater than 6,"SELECT order_date, COUNT(*) FROM orders GROUP BY order_date HAVING COUNT(*) > 6;"
+List all products where stock is greater than 480,SELECT * FROM products WHERE stock > 480;
+Get price and count of records from products grouped by price having count greater than 2,"SELECT price, COUNT(*) FROM products GROUP BY price HAVING COUNT(*) > 2;"
+Get order date and count of records from orders grouped by order date having count greater than 1,"SELECT order_date, COUNT(*) FROM orders GROUP BY order_date HAVING COUNT(*) > 1;"
+"Add a new record to the customers with values Grace Lee, helen.martin@example.com, 2021-01-15","INSERT INTO customers (name, email, signup_date) VALUES ('Grace Lee', 'helen.martin@example.com', '2021-01-15');"
+Get stock and count of records from products grouped by stock having count greater than 2,"SELECT stock, COUNT(*) FROM products GROUP BY stock HAVING COUNT(*) > 2;"
+List all employees where age is greater than 57,SELECT * FROM employees WHERE age > 57;
+List all orders where order date is greater than 2022-01-10,SELECT * FROM orders WHERE order_date > 2022-01-10;
+Change stock to 370 in products where price is 1500,UPDATE products SET stock = '370' WHERE price = '1500';
+List all customers,SELECT * FROM customers;
+Get the total department from employees,SELECT SUM(department) FROM employees;
+"Add a new record to the orders with values 44, 4350, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (44, 4350, '2022-04-25');"
+"Add a new record to the customers with values David Brown, frank.harris@example.com, 2020-07-23","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'frank.harris@example.com', '2020-07-23');"
+"Add a new record to the employees with values Carol King, 49, Engineering, 95000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 49, 'Engineering', 95000);"
+List all order items where order id is greater than 52,SELECT * FROM order_items WHERE order_id > 52;
+"Add a new record to the customers with values Emma Wilson, emma.wilson@example.com, 2020-07-23","INSERT INTO customers (name, email, signup_date) VALUES ('Emma Wilson', 'emma.wilson@example.com', '2020-07-23');"
+Change salary to 75000 in employees where department is Sales,UPDATE employees SET salary = '75000' WHERE department = 'Sales';
+Change salary to 100000 in employees where name is Jane Smith,UPDATE employees SET salary = '100000' WHERE name = 'Jane' Smith;
+List all orders where customer id is greater than 13,SELECT * FROM orders WHERE customer_id > 13;
+"Add a new record to the employees with values Bob Lee, 27, Sales, 80000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 27, 'Sales', 80000);"
+"Add a new record to the employees with values Jane Smith, 53, Sales, 40000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 53, 'Sales', 40000);"
+"Add a new record to the employees with values Bob Lee, 37, Marketing, 115000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 37, 'Marketing', 115000);"
+List all order items where quantity is greater than 5,SELECT * FROM order_items WHERE quantity > 5;
+Remove records from employees where department is less than Sales,DELETE FROM employees WHERE department < Sales;
+Get salary and count of records from employees grouped by salary having count greater than 1,"SELECT salary, COUNT(*) FROM employees GROUP BY salary HAVING COUNT(*) > 1;"
+Change total amount to 3000 in orders where order date is 2022-04-25,UPDATE orders SET total_amount = '3000' WHERE order_date = '2022-04-25';
+Remove records from products where stock is less than 110,DELETE FROM products WHERE stock < 110;
+Remove records from products where name is less than Smartphone,DELETE FROM products WHERE name < Smartphone;
+List all products where stock is greater than 490,SELECT * FROM products WHERE stock > 490;
+"Add a new record to the employees with values Bob Lee, 32, Finance, 85000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 32, 'Finance', 85000);"
+List all customers where email is greater than grace.lee@example.com,SELECT * FROM customers WHERE email > grace.lee@example.com;
+List all employees where age is greater than 45,SELECT * FROM employees WHERE age > 45;
+Remove records from employees where salary is less than 50000,DELETE FROM employees WHERE salary < 50000;
+List all orders where total amount is greater than 1200,SELECT * FROM orders WHERE total_amount > 1200;
+List all order items where order id is greater than 57,SELECT * FROM order_items WHERE order_id > 57;
+List all employees sorted by age,SELECT * FROM employees ORDER BY age;
+Change name to Laptop in products where price is 200,UPDATE products SET name = 'Laptop' WHERE price = '200';
+"Add a new record to the employees with values Carol King, 47, HR, 65000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 47, 'HR', 65000);"
+Change customer id to 26 in orders where id is 1,UPDATE orders SET customer_id = '26' WHERE id = '1';
+Get price and count of records from products grouped by price having count greater than 4,"SELECT price, COUNT(*) FROM products GROUP BY price HAVING COUNT(*) > 4;"
+"Add a new record to the employees with values Bob Lee, 48, Sales, 85000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 48, 'Sales', 85000);"
+Change stock to 200 in products where stock is 320,UPDATE products SET stock = '200' WHERE stock = '320';
+Remove records from products where stock is less than 190,DELETE FROM products WHERE stock < 190;
+Change total amount to 2700 in orders where customer id is 31,UPDATE orders SET total_amount = '2700' WHERE customer_id = '31';
+Get the total stock from products,SELECT SUM(stock) FROM products;
+List all order items where order id is greater than 80,SELECT * FROM order_items WHERE order_id > 80;
+Get total amount and count of records from orders grouped by total amount having count greater than 7,"SELECT total_amount, COUNT(*) FROM orders GROUP BY total_amount HAVING COUNT(*) > 7;"
+Remove records from orders where total amount is less than 350,DELETE FROM orders WHERE total_amount < 350;
+List all order items where quantity is greater than 10,SELECT * FROM order_items WHERE quantity > 10;
+"Add a new record to the employees with values Carol King, 38, HR, 80000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 38, 'HR', 80000);"
+Change total amount to 4500 in orders where total amount is 4250,UPDATE orders SET total_amount = '4500' WHERE total_amount = '4250';
+List all orders where total amount is greater than 300,SELECT * FROM orders WHERE total_amount > 300;
+Get stock and count of records from products grouped by stock having count greater than 3,"SELECT stock, COUNT(*) FROM products GROUP BY stock HAVING COUNT(*) > 3;"
+Change name to Monitor in products where name is Keyboard,UPDATE products SET name = 'Monitor' WHERE name = 'Keyboard';
+"Add a new record to the products with values Monitor, 1700, 490","INSERT INTO products (name, price, stock) VALUES ('Monitor', 1700, 490);"
+Remove records from orders where customer id is less than 38,DELETE FROM orders WHERE customer_id < 38;
+List all products sorted by price,SELECT * FROM products ORDER BY price;
+Change age to 50 in employees where name is Alice Johnson,UPDATE employees SET age = '50' WHERE name = 'Alice' Johnson;
+"Add a new record to the employees with values Bob Lee, 33, HR, 55000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 33, 'HR', 55000);"
+List all order items where order id is greater than 83,SELECT * FROM order_items WHERE order_id > 83;
+Remove records from employees where name is less than Alice Johnson,DELETE FROM employees WHERE name < Alice Johnson;
+Change price to 200 in products where id is 1,UPDATE products SET price = '200' WHERE id = '1';
+List all orders where customer id is greater than 36,SELECT * FROM orders WHERE customer_id > 36;
+Change name to Keyboard in products where stock is 40,UPDATE products SET name = 'Keyboard' WHERE stock = '40';
+List all orders sorted by total amount,SELECT * FROM orders ORDER BY total_amount;
+Change name to Monitor in products where price is 1400,UPDATE products SET name = 'Monitor' WHERE price = '1400';
+Remove records from products where price is less than 1700,DELETE FROM products WHERE price < 1700;
+"Add a new record to the customers with values Grace Lee, emma.wilson@example.com, 2020-07-23","INSERT INTO customers (name, email, signup_date) VALUES ('Grace Lee', 'emma.wilson@example.com', '2020-07-23');"
+List all employees where age is greater than 30,SELECT * FROM employees WHERE age > 30;
+"Add a new record to the orders with values 32, 2600, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (32, 2600, '2022-04-25');"
+"Add a new record to the products with values Laptop, 200, 490","INSERT INTO products (name, price, stock) VALUES ('Laptop', 200, 490);"
+Remove records from orders where customer id is less than 5,DELETE FROM orders WHERE customer_id < 5;
+"Add a new record to the orders with values 41, 4250, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (41, 4250, '2022-04-25');"
+"Add a new record to the products with values Keyboard, 900, 70","INSERT INTO products (name, price, stock) VALUES ('Keyboard', 900, 70);"
+"Add a new record to the orders with values 5, 4900, 2022-05-30","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (5, 4900, '2022-05-30');"
+List all orders where customer id is greater than 37,SELECT * FROM orders WHERE customer_id > 37;
+List all order items sorted by quantity,SELECT * FROM order_items ORDER BY quantity;
+"Add a new record to the products with values Desk Chair, 1500, 60","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 1500, 60);"
+Get the total product id from order items,SELECT SUM(product_id) FROM order_items;
+Get quantity and count of records from order items grouped by quantity having count greater than 6,"SELECT quantity, COUNT(*) FROM order_items GROUP BY quantity HAVING COUNT(*) > 6;"
+List all orders where total amount is greater than 50,SELECT * FROM orders WHERE total_amount > 50;
+List all products where stock is greater than 370,SELECT * FROM products WHERE stock > 370;
+Change customer id to 4 in orders where id is 1,UPDATE orders SET customer_id = '4' WHERE id = '1';
+"Add a new record to the orders with values 32, 3800, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (32, 3800, '2022-04-25');"
+"Add a new record to the employees with values Jane Smith, 33, HR, 85000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 33, 'HR', 85000);"
+List all orders where customer id is greater than 17,SELECT * FROM orders WHERE customer_id > 17;
+List all order items where quantity is greater than 7,SELECT * FROM order_items WHERE quantity > 7;
+Change age to 45 in employees where name is Bob Lee,UPDATE employees SET age = '45' WHERE name = 'Bob' Lee;
+Change age to 45 in employees where age is 40,UPDATE employees SET age = '45' WHERE age = '40';
+Remove records from orders where total amount is less than 2900,DELETE FROM orders WHERE total_amount < 2900;
+Get email and count of records from customers grouped by email having count greater than 8,"SELECT email, COUNT(*) FROM customers GROUP BY email HAVING COUNT(*) > 8;"
+Change price to 300 in products where price is 1700,UPDATE products SET price = '300' WHERE price = '1700';
+Get order date and count of records from orders grouped by order date having count greater than 7,"SELECT order_date, COUNT(*) FROM orders GROUP BY order_date HAVING COUNT(*) > 7;"
+List all products where name is greater than Monitor,SELECT * FROM products WHERE name > Monitor;
+"Add a new record to the orders with values 16, 3000, 2022-05-30","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (16, 3000, '2022-05-30');"
+"Add a new record to the orders with values 26, 1800, 2022-02-14","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (26, 1800, '2022-02-14');"
+"Add a new record to the employees with values Bob Lee, 56, Engineering, 30000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 56, 'Engineering', 30000);"
+"Add a new record to the employees with values Bob Lee, 32, Engineering, 60000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 32, 'Engineering', 60000);"
+List all order items where product id is greater than 3,SELECT * FROM order_items WHERE product_id > 3;
+"Add a new record to the employees with values Alice Johnson, 33, Sales, 85000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 33, 'Sales', 85000);"
+"Add a new record to the products with values Laptop, 200, 470","INSERT INTO products (name, price, stock) VALUES ('Laptop', 200, 470);"
+Change order date to 2022-03-20 in orders where order date is 2022-03-20,UPDATE orders SET order_date = '2022-03-20' WHERE order_date = '2022-03-20';
+Remove records from employees where name is less than Jane Smith,DELETE FROM employees WHERE name < Jane Smith;
+Change age to 58 in employees where salary is 65000,UPDATE employees SET age = '58' WHERE salary = '65000';
+List all employees where age is greater than 35,SELECT * FROM employees WHERE age > 35;
+Get signup date and count of records from customers grouped by signup date having count greater than 10,"SELECT signup_date, COUNT(*) FROM customers GROUP BY signup_date HAVING COUNT(*) > 10;"
+"Add a new record to the orders with values 33, 2450, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (33, 2450, '2022-04-25');"
+"Add a new record to the customers with values Emma Wilson, frank.harris@example.com, 2020-12-30","INSERT INTO customers (name, email, signup_date) VALUES ('Emma Wilson', 'frank.harris@example.com', '2020-12-30');"
+"Add a new record to the customers with values Emma Wilson, helen.martin@example.com, 2021-01-15","INSERT INTO customers (name, email, signup_date) VALUES ('Emma Wilson', 'helen.martin@example.com', '2021-01-15');"
+Change total amount to 3200 in orders where total amount is 3500,UPDATE orders SET total_amount = '3200' WHERE total_amount = '3500';
+Remove records from products where stock is less than 10,DELETE FROM products WHERE stock < 10;
+Change name to Laptop in products where name is Desk Chair,UPDATE products SET name = 'Laptop' WHERE name = 'Desk' Chair;
+"Add a new record to the customers with values Frank Harris, emma.wilson@example.com, 2021-01-15","INSERT INTO customers (name, email, signup_date) VALUES ('Frank Harris', 'emma.wilson@example.com', '2021-01-15');"
+List all orders where customer id is greater than 21,SELECT * FROM orders WHERE customer_id > 21;
+Get order id and count of records from order items grouped by order id having count greater than 4,"SELECT order_id, COUNT(*) FROM order_items GROUP BY order_id HAVING COUNT(*) > 4;"
+Remove records from products where name is less than Monitor,DELETE FROM products WHERE name < Monitor;
+Get name and count of records from customers grouped by name having count greater than 4,"SELECT name, COUNT(*) FROM customers GROUP BY name HAVING COUNT(*) > 4;"
+Get price and count of records from products grouped by price having count greater than 7,"SELECT price, COUNT(*) FROM products GROUP BY price HAVING COUNT(*) > 7;"
+Remove records from orders where total amount is less than 4500,DELETE FROM orders WHERE total_amount < 4500;
+Get order date and count of records from orders grouped by order date having count greater than 10,"SELECT order_date, COUNT(*) FROM orders GROUP BY order_date HAVING COUNT(*) > 10;"
+"Add a new record to the employees with values Bob Lee, 57, Marketing, 115000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 57, 'Marketing', 115000);"
+List all orders where customer id is greater than 11,SELECT * FROM orders WHERE customer_id > 11;
+Change name to Alice Johnson in employees where name is Bob Lee,UPDATE employees SET name = 'Alice' Johnson WHERE name = 'Bob' Lee;
+List all products where stock is greater than 460,SELECT * FROM products WHERE stock > 460;
+List all products where price is greater than 1100,SELECT * FROM products WHERE price > 1100;
+List all order items where order id is greater than 59,SELECT * FROM order_items WHERE order_id > 59;
+Remove records from orders where order date is less than 2022-05-30,DELETE FROM orders WHERE order_date < 2022-05-30;
+"Add a new record to the customers with values Grace Lee, david.brown@example.com, 2022-03-10","INSERT INTO customers (name, email, signup_date) VALUES ('Grace Lee', 'david.brown@example.com', '2022-03-10');"
+List all customers sorted by name,SELECT * FROM customers ORDER BY name;
+List all customers where email is greater than david.brown@example.com,SELECT * FROM customers WHERE email > david.brown@example.com;
+Remove records from products where stock is less than 230,DELETE FROM products WHERE stock < 230;
+Change customer id to 13 in orders where total amount is 700,UPDATE orders SET customer_id = '13' WHERE total_amount = '700';
+"Add a new record to the employees with values Alice Johnson, 34, Finance, 40000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 34, 'Finance', 40000);"
+Get name and count of records from customers grouped by name having count greater than 3,"SELECT name, COUNT(*) FROM customers GROUP BY name HAVING COUNT(*) > 3;"
+"Add a new record to the employees with values Alice Johnson, 38, HR, 55000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 38, 'HR', 55000);"
+Change customer id to 31 in orders where total amount is 1500,UPDATE orders SET customer_id = '31' WHERE total_amount = '1500';
+Get age and count of records from employees grouped by age having count greater than 1,"SELECT age, COUNT(*) FROM employees GROUP BY age HAVING COUNT(*) > 1;"
+"Add a new record to the products with values Laptop, 400, 90","INSERT INTO products (name, price, stock) VALUES ('Laptop', 400, 90);"
+Get name and count of records from products grouped by name having count greater than 1,"SELECT name, COUNT(*) FROM products GROUP BY name HAVING COUNT(*) > 1;"
+"Add a new record to the orders with values 19, 600, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (19, 600, '2022-03-20');"
+Change order date to 2022-05-30 in orders where order date is 2022-04-25,UPDATE orders SET order_date = '2022-05-30' WHERE order_date = '2022-04-25';
+"Add a new record to the employees with values Bob Lee, 48, Finance, 95000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 48, 'Finance', 95000);"
+Change age to 56 in employees where name is Jane Smith,UPDATE employees SET age = '56' WHERE name = 'Jane' Smith;
+"Add a new record to the orders with values 1, 1050, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (1, 1050, '2022-04-25');"
+Change order date to 2022-01-10 in orders where id is 1,UPDATE orders SET order_date = '2022-01-10' WHERE id = '1';
+List all employees where salary is greater than 35000,SELECT * FROM employees WHERE salary > 35000;
+List all order items where product id is greater than 11,SELECT * FROM order_items WHERE product_id > 11;
+"Add a new record to the customers with values Frank Harris, helen.martin@example.com, 2021-01-15","INSERT INTO customers (name, email, signup_date) VALUES ('Frank Harris', 'helen.martin@example.com', '2021-01-15');"
+Get stock and count of records from products grouped by stock having count greater than 10,"SELECT stock, COUNT(*) FROM products GROUP BY stock HAVING COUNT(*) > 10;"
+Remove records from orders where total amount is less than 1850,DELETE FROM orders WHERE total_amount < 1850;
+"Add a new record to the orders with values 9, 4200, 2022-02-14","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (9, 4200, '2022-02-14');"
+Remove records from orders where total amount is less than 1150,DELETE FROM orders WHERE total_amount < 1150;
+Change total amount to 4900 in orders where total amount is 4100,UPDATE orders SET total_amount = '4900' WHERE total_amount = '4100';
+List all products where stock is greater than 440,SELECT * FROM products WHERE stock > 440;
+"Add a new record to the products with values Laptop, 1800, 20","INSERT INTO products (name, price, stock) VALUES ('Laptop', 1800, 20);"
+List all order items where order id is greater than 87,SELECT * FROM order_items WHERE order_id > 87;
+Remove records from products where price is less than 1800,DELETE FROM products WHERE price < 1800;
+Remove records from products where stock is less than 420,DELETE FROM products WHERE stock < 420;
+"Add a new record to the employees with values Carol King, 35, Engineering, 100000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 35, 'Engineering', 100000);"
+Remove records from orders where total amount is less than 1900,DELETE FROM orders WHERE total_amount < 1900;
+Remove records from products where price is less than 200,DELETE FROM products WHERE price < 200;
+List all order items where product id is greater than 16,SELECT * FROM order_items WHERE product_id > 16;
+List all employees where name is greater than John Doe,SELECT * FROM employees WHERE name > John Doe;
+List all employees where name is greater than Alice Johnson,SELECT * FROM employees WHERE name > Alice Johnson;
+Change order date to 2022-02-14 in orders where order date is 2022-05-30,UPDATE orders SET order_date = ''2022-02-14'' WHERE order_date = '2022-05-30';
+"Add a new record to the orders with values 8, 3000, 2022-02-14","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (8, 3000, '2022-02-14');"
+List all customers where email is greater than emma.wilson@example.com,SELECT * FROM customers WHERE email > emma.wilson@example.com;
+List all order items where order id is greater than 93,SELECT * FROM order_items WHERE order_id > 93;
+"Add a new record to the products with values Laptop, 500, 440","INSERT INTO products (name, price, stock) VALUES ('Laptop', 500, 440);"
+Remove records from products where price is less than 900,DELETE FROM products WHERE price < 900;
+Get stock and count of records from products grouped by stock having count greater than 6,"SELECT stock, COUNT(*) FROM products GROUP BY stock HAVING COUNT(*) > 6;"
+Change customer id to 10 in orders where customer id is 45,UPDATE orders SET customer_id = '10' WHERE customer_id = '45';
+Change price to 1500 in products where id is 1,UPDATE products SET price = '1500' WHERE id = '1';
+"Add a new record to the orders with values 48, 50, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (48, 50, '2022-04-25');"
+List all orders where customer id is greater than 2,SELECT * FROM orders WHERE customer_id > 2;
+Change order date to 2022-05-30 in orders where customer id is 36,UPDATE orders SET order_date = '2022-05-30' WHERE customer_id = '36';
+"Add a new record to the employees with values Bob Lee, 59, Engineering, 55000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 59, 'Engineering', 55000);"
+"Add a new record to the orders with values 37, 2350, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (37, 2350, '2022-03-20');"
+Get salary and count of records from employees grouped by salary having count greater than 5,"SELECT salary, COUNT(*) FROM employees GROUP BY salary HAVING COUNT(*) > 5;"
+Change department to HR in employees where department is Marketing,UPDATE employees SET department = 'HR' WHERE department = 'Marketing';
+List all order items where order id is greater than 76,SELECT * FROM order_items WHERE order_id > 76;
+Get customer id and count of records from orders grouped by customer id having count greater than 9,"SELECT customer_id, COUNT(*) FROM orders GROUP BY customer_id HAVING COUNT(*) > 9;"
+"Add a new record to the employees with values John Doe, 52, Engineering, 45000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 52, 'Engineering', 45000);"
+Change order date to 2022-02-14 in orders where customer id is 21,UPDATE orders SET order_date = ''2022-02-14'' WHERE customer_id = '21';
+"Add a new record to the products with values Smartphone, 400, 200","INSERT INTO products (name, price, stock) VALUES ('Smartphone', 400, 200);"
+"Add a new record to the customers with values Frank Harris, frank.harris@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('Frank Harris', 'frank.harris@example.com', '2021-11-05');"
+"Add a new record to the products with values Keyboard, 2000, 270","INSERT INTO products (name, price, stock) VALUES ('Keyboard', 2000, 270);"
+"Add a new record to the customers with values Emma Wilson, frank.harris@example.com, 2020-07-23","INSERT INTO customers (name, email, signup_date) VALUES ('Emma Wilson', 'frank.harris@example.com', '2020-07-23');"
+"Add a new record to the products with values Monitor, 2000, 250","INSERT INTO products (name, price, stock) VALUES ('Monitor', 2000, 250);"
+List all products where stock is greater than 170,SELECT * FROM products WHERE stock > 170;
+List all products where stock is greater than 200,SELECT * FROM products WHERE stock > 200;
+Change customer id to 40 in orders where customer id is 34,UPDATE orders SET customer_id = '40' WHERE customer_id = '34';
+Change customer id to 38 in orders where customer id is 39,UPDATE orders SET customer_id = '38' WHERE customer_id = '39';
+Get signup date and count of records from customers grouped by signup date having count greater than 8,"SELECT signup_date, COUNT(*) FROM customers GROUP BY signup_date HAVING COUNT(*) > 8;"
+"Add a new record to the employees with values John Doe, 30, Engineering, 90000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 30, 'Engineering', 90000);"
+"Add a new record to the orders with values 50, 1500, 2022-05-30","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (50, 1500, '2022-05-30');"
+Remove records from products where stock is less than 500,DELETE FROM products WHERE stock < 500;
+"Add a new record to the products with values Keyboard, 2000, 180","INSERT INTO products (name, price, stock) VALUES ('Keyboard', 2000, 180);"
+"Add a new record to the products with values Laptop, 200, 50","INSERT INTO products (name, price, stock) VALUES ('Laptop', 200, 50);"
+"Add a new record to the customers with values Grace Lee, frank.harris@example.com, 2020-12-30","INSERT INTO customers (name, email, signup_date) VALUES ('Grace Lee', 'frank.harris@example.com', '2020-12-30');"
+Remove records from products where price is less than 2000,DELETE FROM products WHERE price < 2000;
+"Add a new record to the employees with values Jane Smith, 27, Marketing, 100000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 27, 'Marketing', 100000);"
+"Add a new record to the customers with values Frank Harris, helen.martin@example.com, 2022-03-10","INSERT INTO customers (name, email, signup_date) VALUES ('Frank Harris', 'helen.martin@example.com', '2022-03-10');"
+Change age to 59 in employees where age is 34,UPDATE employees SET age = '59' WHERE age = '34';
+Get age and count of records from employees grouped by age having count greater than 4,"SELECT age, COUNT(*) FROM employees GROUP BY age HAVING COUNT(*) > 4;"
+List all employees where salary is greater than 55000,SELECT * FROM employees WHERE salary > 55000;
+"Add a new record to the customers with values Emma Wilson, david.brown@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('Emma Wilson', 'david.brown@example.com', '2021-11-05');"
+Change name to Smartphone in products where stock is 120,UPDATE products SET name = 'Smartphone' WHERE stock = '120';
+Get stock and count of records from products grouped by stock having count greater than 8,"SELECT stock, COUNT(*) FROM products GROUP BY stock HAVING COUNT(*) > 8;"
+"Add a new record to the orders with values 24, 4750, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (24, 4750, '2022-03-20');"
+Get order date and count of records from orders grouped by order date having count greater than 3,"SELECT order_date, COUNT(*) FROM orders GROUP BY order_date HAVING COUNT(*) > 3;"
+List all orders where total amount is greater than 200,SELECT * FROM orders WHERE total_amount > 200;
+List all orders where total amount is greater than 450,SELECT * FROM orders WHERE total_amount > 450;
+List all products where stock is greater than 160,SELECT * FROM products WHERE stock > 160;
+Change name to Monitor in products where name is Desk Chair,UPDATE products SET name = 'Monitor' WHERE name = 'Desk' Chair;
+"Add a new record to the products with values Monitor, 400, 30","INSERT INTO products (name, price, stock) VALUES ('Monitor', 400, 30);"
+Get price and count of records from products grouped by price having count greater than 10,"SELECT price, COUNT(*) FROM products GROUP BY price HAVING COUNT(*) > 10;"
+List all order items where order id is greater than 49,SELECT * FROM order_items WHERE order_id > 49;
+Change stock to 470 in products where price is 1000,UPDATE products SET stock = '470' WHERE price = '1000';
+Get quantity and count of records from order items grouped by quantity having count greater than 4,"SELECT quantity, COUNT(*) FROM order_items GROUP BY quantity HAVING COUNT(*) > 4;"
+Change customer id to 7 in orders where id is 1,UPDATE orders SET customer_id = '7' WHERE id = '1';
+"Add a new record to the employees with values Alice Johnson, 30, Engineering, 70000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 30, 'Engineering', 70000);"
+Change department to Finance in employees where name is Alice Johnson,UPDATE employees SET department = 'Finance' WHERE name = 'Alice' Johnson;
+Get salary and count of records from employees grouped by salary having count greater than 10,"SELECT salary, COUNT(*) FROM employees GROUP BY salary HAVING COUNT(*) > 10;"
+"Add a new record to the orders with values 19, 3900, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (19, 3900, '2022-03-20');"
+List all products where price is greater than 1500,SELECT * FROM products WHERE price > 1500;
+Remove records from employees where age is less than 49,DELETE FROM employees WHERE age < 49;
+List all order items where quantity is greater than 6,SELECT * FROM order_items WHERE quantity > 6;
+Change age to 46 in employees where id is 1,UPDATE employees SET age = '46' WHERE id = '1';
+Change department to Finance in employees where salary is 30000,UPDATE employees SET department = 'Finance' WHERE salary = '30000';
+Remove records from employees where department is less than Engineering,DELETE FROM employees WHERE department < Engineering;
+Remove records from products where stock is less than 40,DELETE FROM products WHERE stock < 40;
+"Add a new record to the customers with values David Brown, emma.wilson@example.com, 2021-01-15","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'emma.wilson@example.com', '2021-01-15');"
+List all customers where name is greater than Helen Martin,SELECT * FROM customers WHERE name > Helen Martin;
+List all orders where total amount is greater than 1000,SELECT * FROM orders WHERE total_amount > 1000;
+"Add a new record to the customers with values Grace Lee, grace.lee@example.com, 2021-01-15","INSERT INTO customers (name, email, signup_date) VALUES ('Grace Lee', 'grace.lee@example.com', '2021-01-15');"
+Change stock to 70 in products where price is 600,UPDATE products SET stock = '70' WHERE price = '600';
+Get customer id and count of records from orders grouped by customer id having count greater than 5,"SELECT customer_id, COUNT(*) FROM orders GROUP BY customer_id HAVING COUNT(*) > 5;"
+"Add a new record to the employees with values Alice Johnson, 59, HR, 115000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 59, 'HR', 115000);"
+Change total amount to 3200 in orders where order date is 2022-03-20,UPDATE orders SET total_amount = '3200' WHERE order_date = '2022-03-20';
+List all orders where order date is greater than 2022-02-14,SELECT * FROM orders WHERE order_date > 2022-02-14;
+Get quantity and count of records from order items grouped by quantity having count greater than 7,"SELECT quantity, COUNT(*) FROM order_items GROUP BY quantity HAVING COUNT(*) > 7;"
+Get price and count of records from products grouped by price having count greater than 9,"SELECT price, COUNT(*) FROM products GROUP BY price HAVING COUNT(*) > 9;"
+Get customer id and count of records from orders grouped by customer id having count greater than 3,"SELECT customer_id, COUNT(*) FROM orders GROUP BY customer_id HAVING COUNT(*) > 3;"
+Remove records from orders where customer id is less than 14,DELETE FROM orders WHERE customer_id < 14;
+List all customers where email is greater than frank.harris@example.com,SELECT * FROM customers WHERE email > frank.harris@example.com;
+Change salary to 60000 in employees where age is 41,UPDATE employees SET salary = '60000' WHERE age = '41';
+List all products where price is greater than 1900,SELECT * FROM products WHERE price > 1900;
+"Add a new record to the orders with values 26, 600, 2022-05-30","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (26, 600, '2022-05-30');"
+Get name and count of records from customers grouped by name having count greater than 6,"SELECT name, COUNT(*) FROM customers GROUP BY name HAVING COUNT(*) > 6;"
+List all order items where quantity is greater than 20,SELECT * FROM order_items WHERE quantity > 20;
+List all order items where order id is greater than 55,SELECT * FROM order_items WHERE order_id > 55;
+List all products where stock is greater than 30,SELECT * FROM products WHERE stock > 30;
+Change name to Desk Chair in products where stock is 80,UPDATE products SET name = 'Desk' Chair WHERE stock = '80';
+Change salary to 90000 in employees where age is 36,UPDATE employees SET salary = '90000' WHERE age = '36';
+List all orders where total amount is greater than 2850,SELECT * FROM orders WHERE total_amount > 2850;
+"Add a new record to the customers with values Frank Harris, helen.martin@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('Frank Harris', 'helen.martin@example.com', '2021-11-05');"
+"Add a new record to the orders with values 10, 3500, 2022-01-10","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (10, 3500, '2022-01-10');"
+List all employees where salary is greater than 85000,SELECT * FROM employees WHERE salary > 85000;
+Get stock and count of records from products grouped by stock having count greater than 9,"SELECT stock, COUNT(*) FROM products GROUP BY stock HAVING COUNT(*) > 9;"
+Change name to Desk Chair in products where name is Laptop,UPDATE products SET name = 'Desk' Chair WHERE name = 'Laptop';
+"Add a new record to the employees with values Bob Lee, 29, Engineering, 60000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 29, 'Engineering', 60000);"
+"Add a new record to the customers with values David Brown, frank.harris@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'frank.harris@example.com', '2021-11-05');"
+"Add a new record to the orders with values 45, 2200, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (45, 2200, '2022-04-25');"
+Change age to 60 in employees where department is HR,UPDATE employees SET age = '60' WHERE department = 'HR';
+"Add a new record to the customers with values Emma Wilson, david.brown@example.com, 2021-01-15","INSERT INTO customers (name, email, signup_date) VALUES ('Emma Wilson', 'david.brown@example.com', '2021-01-15');"
+Change customer id to 48 in orders where customer id is 38,UPDATE orders SET customer_id = '48' WHERE customer_id = '38';
+List all products where price is greater than 1000,SELECT * FROM products WHERE price > 1000;
+Remove records from employees where age is less than 60,DELETE FROM employees WHERE age < 60;
+List all customers where name is greater than Grace Lee,SELECT * FROM customers WHERE name > Grace Lee;
+"Add a new record to the products with values Keyboard, 400, 30","INSERT INTO products (name, price, stock) VALUES ('Keyboard', 400, 30);"
+List all products where name is greater than Keyboard,SELECT * FROM products WHERE name > Keyboard;
+Remove records from orders where total amount is less than 1800,DELETE FROM orders WHERE total_amount < 1800;
+"Add a new record to the customers with values David Brown, frank.harris@example.com, 2022-03-10","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'frank.harris@example.com', '2022-03-10');"
+"Add a new record to the products with values Keyboard, 1900, 300","INSERT INTO products (name, price, stock) VALUES ('Keyboard', 1900, 300);"
+Change age to 59 in employees where name is Alice Johnson,UPDATE employees SET age = '59' WHERE name = 'Alice' Johnson;
+"Add a new record to the employees with values Bob Lee, 54, Marketing, 45000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 54, 'Marketing', 45000);"
+"Add a new record to the products with values Laptop, 900, 370","INSERT INTO products (name, price, stock) VALUES ('Laptop', 900, 370);"
+Remove records from employees where salary is less than 120000,DELETE FROM employees WHERE salary < 120000;
+Change order date to 2022-02-14 in orders where id is 1,UPDATE orders SET order_date = ''2022-02-14'' WHERE id = '1';
+"Add a new record to the employees with values Jane Smith, 29, Sales, 75000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 29, 'Sales', 75000);"
+Get order date and count of records from orders grouped by order date having count greater than 5,"SELECT order_date, COUNT(*) FROM orders GROUP BY order_date HAVING COUNT(*) > 5;"
+Change salary to 55000 in employees where department is Sales,UPDATE employees SET salary = '55000' WHERE department = 'Sales';
+Get name and count of records from products grouped by name having count greater than 3,"SELECT name, COUNT(*) FROM products GROUP BY name HAVING COUNT(*) > 3;"
+Change name to John Doe in employees where id is 1,UPDATE employees SET name = 'John' Doe WHERE id = '1';
+List all orders where total amount is greater than 4650,SELECT * FROM orders WHERE total_amount > 4650;
+Change total amount to 3200 in orders where total amount is 1950,UPDATE orders SET total_amount = '3200' WHERE total_amount = '1950';
+Get quantity and count of records from order items grouped by quantity having count greater than 9,"SELECT quantity, COUNT(*) FROM order_items GROUP BY quantity HAVING COUNT(*) > 9;"
+"Add a new record to the employees with values Alice Johnson, 36, Finance, 35000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 36, 'Finance', 35000);"
+Change order date to 2022-03-20 in orders where order date is 2022-01-10,UPDATE orders SET order_date = '2022-03-20' WHERE order_date = '2022-01-10';
+"Add a new record to the customers with values David Brown, helen.martin@example.com, 2020-07-23","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'helen.martin@example.com', '2020-07-23');"
+"Add a new record to the orders with values 29, 2050, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (29, 2050, '2022-03-20');"
+Get name and count of records from employees grouped by name having count greater than 1,"SELECT name, COUNT(*) FROM employees GROUP BY name HAVING COUNT(*) > 1;"
+List all customers where name is greater than Frank Harris,SELECT * FROM customers WHERE name > Frank Harris;
+Get name and count of records from employees grouped by name having count greater than 5,"SELECT name, COUNT(*) FROM employees GROUP BY name HAVING COUNT(*) > 5;"
+"Add a new record to the customers with values Helen Martin, frank.harris@example.com, 2022-03-10","INSERT INTO customers (name, email, signup_date) VALUES ('Helen Martin', 'frank.harris@example.com', '2022-03-10');"
+Get order id and count of records from order items grouped by order id having count greater than 6,"SELECT order_id, COUNT(*) FROM order_items GROUP BY order_id HAVING COUNT(*) > 6;"
+List all order items where product id is greater than 8,SELECT * FROM order_items WHERE product_id > 8;
+Change total amount to 1350 in orders where order date is 2022-02-14,UPDATE orders SET total_amount = '1350' WHERE order_date = '2022-02-14';
+Change customer id to 37 in orders where total amount is 950,UPDATE orders SET customer_id = '37' WHERE total_amount = '950';
+Change order date to 2022-04-25 in orders where total amount is 3300,UPDATE orders SET order_date = '2022-04-25' WHERE total_amount = '3300';
+"Add a new record to the employees with values Alice Johnson, 41, Finance, 115000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 41, 'Finance', 115000);"
+Change age to 47 in employees where id is 1,UPDATE employees SET age = '47' WHERE id = '1';
+Change order date to 2022-01-10 in orders where total amount is 1400,UPDATE orders SET order_date = '2022-01-10' WHERE total_amount = '1400';
+Change customer id to 45 in orders where customer id is 11,UPDATE orders SET customer_id = '45' WHERE customer_id = '11';
+List all employees where department is greater than HR,SELECT * FROM employees WHERE department > HR;
+List all order items sorted by order id,SELECT * FROM order_items ORDER BY order_id;
+List all employees where salary is greater than 70000,SELECT * FROM employees WHERE salary > 70000;
+List all employees where department is greater than Sales,SELECT * FROM employees WHERE department > Sales;
+"Add a new record to the customers with values David Brown, david.brown@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'david.brown@example.com', '2021-11-05');"
+List all order items where product id is greater than 15,SELECT * FROM order_items WHERE product_id > 15;
+Change department to Marketing in employees where id is 1,UPDATE employees SET department = 'Marketing' WHERE id = '1';
+Remove records from orders where total amount is less than 3400,DELETE FROM orders WHERE total_amount < 3400;
+Get age and count of records from employees grouped by age having count greater than 2,"SELECT age, COUNT(*) FROM employees GROUP BY age HAVING COUNT(*) > 2;"
+Remove records from orders where total amount is less than 1750,DELETE FROM orders WHERE total_amount < 1750;
+Remove records from orders where order date is less than 2022-01-10,DELETE FROM orders WHERE order_date < 2022-01-10;
+List all products where stock is greater than 150,SELECT * FROM products WHERE stock > 150;
+Change name to Carol King in employees where salary is 50000,UPDATE employees SET name = 'Carol' King WHERE salary = '50000';
+List all order items where quantity is greater than 1,SELECT * FROM order_items WHERE quantity > 1;
+Get total amount and count of records from orders grouped by total amount having count greater than 10,"SELECT total_amount, COUNT(*) FROM orders GROUP BY total_amount HAVING COUNT(*) > 10;"
+Get the total customer id from orders,SELECT SUM(customer_id) FROM orders;
+Change price to 2000 in products where id is 1,UPDATE products SET price = '2000' WHERE id = '1';
+Change customer id to 48 in orders where total amount is 2300,UPDATE orders SET customer_id = '48' WHERE total_amount = '2300';
+Get customer id and count of records from orders grouped by customer id having count greater than 10,"SELECT customer_id, COUNT(*) FROM orders GROUP BY customer_id HAVING COUNT(*) > 10;"
+Change stock to 120 in products where stock is 410,UPDATE products SET stock = '120' WHERE stock = '410';
+List all employees where department is greater than Engineering,SELECT * FROM employees WHERE department > Engineering;
+List all order items where order id is greater than 68,SELECT * FROM order_items WHERE order_id > 68;
+List all customers sorted by email,SELECT * FROM customers ORDER BY email;
+Change customer id to 31 in orders where customer id is 8,UPDATE orders SET customer_id = '31' WHERE customer_id = '8';
+Get total amount and count of records from orders grouped by total amount having count greater than 4,"SELECT total_amount, COUNT(*) FROM orders GROUP BY total_amount HAVING COUNT(*) > 4;"
+"Add a new record to the employees with values Carol King, 44, Sales, 110000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 44, 'Sales', 110000);"
+"Add a new record to the employees with values John Doe, 34, Sales, 50000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 34, 'Sales', 50000);"
+Get customer id and count of records from orders grouped by customer id having count greater than 4,"SELECT customer_id, COUNT(*) FROM orders GROUP BY customer_id HAVING COUNT(*) > 4;"
+Remove records from employees where age is less than 33,DELETE FROM employees WHERE age < 33;
+List all order items where order id is greater than 63,SELECT * FROM order_items WHERE order_id > 63;
+Change stock to 450 in products where id is 1,UPDATE products SET stock = '450' WHERE id = '1';
+Get name and count of records from employees grouped by name having count greater than 7,"SELECT name, COUNT(*) FROM employees GROUP BY name HAVING COUNT(*) > 7;"
+"Add a new record to the orders with values 5, 2650, 2022-05-30","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (5, 2650, '2022-05-30');"
+Change customer id to 31 in orders where order date is 2022-01-10,UPDATE orders SET customer_id = '31' WHERE order_date = '2022-01-10';
+List all products where price is greater than 500,SELECT * FROM products WHERE price > 500;
+"Add a new record to the customers with values David Brown, helen.martin@example.com, 2022-03-10","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'helen.martin@example.com', '2022-03-10');"
+Get age and count of records from employees grouped by age having count greater than 9,"SELECT age, COUNT(*) FROM employees GROUP BY age HAVING COUNT(*) > 9;"
+List all orders where total amount is greater than 2800,SELECT * FROM orders WHERE total_amount > 2800;
+Get quantity and count of records from order items grouped by quantity having count greater than 10,"SELECT quantity, COUNT(*) FROM order_items GROUP BY quantity HAVING COUNT(*) > 10;"
+Remove records from employees where salary is less than 60000,DELETE FROM employees WHERE salary < 60000;
+Change stock to 380 in products where name is Desk Chair,UPDATE products SET stock = '380' WHERE name = 'Desk' Chair;
+List all products where name is greater than Laptop,SELECT * FROM products WHERE name > Laptop;
+Remove records from orders where customer id is less than 46,DELETE FROM orders WHERE customer_id < 46;
+Change stock to 260 in products where price is 1600,UPDATE products SET stock = '260' WHERE price = '1600';
+Change customer id to 17 in orders where total amount is 2100,UPDATE orders SET customer_id = '17' WHERE total_amount = '2100';
+List all orders where total amount is greater than 3100,SELECT * FROM orders WHERE total_amount > 3100;
+"Add a new record to the orders with values 17, 4450, 2022-02-14","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (17, 4450, '2022-02-14');"
+Get name and count of records from customers grouped by name having count greater than 5,"SELECT name, COUNT(*) FROM customers GROUP BY name HAVING COUNT(*) > 5;"
+List all employees where salary is greater than 105000,SELECT * FROM employees WHERE salary > 105000;
+Remove records from products where price is less than 800,DELETE FROM products WHERE price < 800;
+List all products sorted by name,SELECT * FROM products ORDER BY name;
+"Add a new record to the orders with values 36, 150, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (36, 150, '2022-03-20');"
+Get email and count of records from customers grouped by email having count greater than 10,"SELECT email, COUNT(*) FROM customers GROUP BY email HAVING COUNT(*) > 10;"
+Change stock to 320 in products where name is Desk Chair,UPDATE products SET stock = '320' WHERE name = 'Desk' Chair;
+"Add a new record to the orders with values 50, 1900, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (50, 1900, '2022-03-20');"
+Change name to Desk Chair in products where stock is 100,UPDATE products SET name = 'Desk' Chair WHERE stock = '100';
+"Add a new record to the products with values Desk Chair, 1600, 220","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 1600, 220);"
+Get order id and count of records from order items grouped by order id having count greater than 10,"SELECT order_id, COUNT(*) FROM order_items GROUP BY order_id HAVING COUNT(*) > 10;"
+"Add a new record to the employees with values Bob Lee, 28, HR, 55000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 28, 'HR', 55000);"
+Change department to Engineering in employees where id is 1,UPDATE employees SET department = 'Engineering' WHERE id = '1';
+"Add a new record to the customers with values David Brown, emma.wilson@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'emma.wilson@example.com', '2021-11-05');"
+Remove records from employees where salary is less than 70000,DELETE FROM employees WHERE salary < 70000;
+List all products where stock is greater than 270,SELECT * FROM products WHERE stock > 270;
+Get salary and count of records from employees grouped by salary having count greater than 7,"SELECT salary, COUNT(*) FROM employees GROUP BY salary HAVING COUNT(*) > 7;"
+List all employees where age is greater than 29,SELECT * FROM employees WHERE age > 29;
+List all order items sorted by product id,SELECT * FROM order_items ORDER BY product_id;
+Change total amount to 2500 in orders where order date is 2022-02-14,UPDATE orders SET total_amount = '2500' WHERE order_date = '2022-02-14';
+List all products where stock is greater than 350,SELECT * FROM products WHERE stock > 350;
+List all order items where quantity is greater than 3,SELECT * FROM order_items WHERE quantity > 3;
+Remove records from orders where customer id is less than 2,DELETE FROM orders WHERE customer_id < 2;
+"Add a new record to the orders with values 7, 3950, 2022-01-10","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (7, 3950, '2022-01-10');"
+Remove records from orders where order date is less than 2022-04-25,DELETE FROM orders WHERE order_date < 2022-04-25;
+Get name and count of records from employees grouped by name having count greater than 6,"SELECT name, COUNT(*) FROM employees GROUP BY name HAVING COUNT(*) > 6;"
+"Add a new record to the employees with values Alice Johnson, 31, HR, 120000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 31, 'HR', 120000);"
+Change age to 53 in employees where salary is 95000,UPDATE employees SET age = '53' WHERE salary = '95000';
+List all orders where customer id is greater than 25,SELECT * FROM orders WHERE customer_id > 25;
+"Add a new record to the orders with values 17, 4000, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (17, 4000, '2022-04-25');"
+"Add a new record to the employees with values John Doe, 42, Engineering, 100000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 42, 'Engineering', 100000);"
+"Add a new record to the orders with values 21, 3500, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (21, 3500, '2022-03-20');"
+Change total amount to 2000 in orders where customer id is 37,UPDATE orders SET total_amount = '2000' WHERE customer_id = '37';
+"Add a new record to the orders with values 50, 2100, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (50, 2100, '2022-04-25');"
+Remove records from orders where total amount is less than 450,DELETE FROM orders WHERE total_amount < 450;
+"Add a new record to the products with values Laptop, 900, 60","INSERT INTO products (name, price, stock) VALUES ('Laptop', 900, 60);"
+"Add a new record to the products with values Laptop, 1500, 470","INSERT INTO products (name, price, stock) VALUES ('Laptop', 1500, 470);"
+"Add a new record to the employees with values Bob Lee, 46, Engineering, 55000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 46, 'Engineering', 55000);"
+Change name to Keyboard in products where price is 1800,UPDATE products SET name = 'Keyboard' WHERE price = '1800';
+Get name and count of records from customers grouped by name having count greater than 7,"SELECT name, COUNT(*) FROM customers GROUP BY name HAVING COUNT(*) > 7;"
+Get name and count of records from products grouped by name having count greater than 7,"SELECT name, COUNT(*) FROM products GROUP BY name HAVING COUNT(*) > 7;"
+"Add a new record to the customers with values David Brown, david.brown@example.com, 2022-03-10","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'david.brown@example.com', '2022-03-10');"
+Change price to 1600 in products where stock is 180,UPDATE products SET price = '1600' WHERE stock = '180';
+"Add a new record to the orders with values 33, 2050, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (33, 2050, '2022-03-20');"
+List all products where name is greater than Desk Chair,SELECT * FROM products WHERE name > Desk Chair;
+Remove records from employees where salary is less than 65000,DELETE FROM employees WHERE salary < 65000;
+Change total amount to 4650 in orders where total amount is 3700,UPDATE orders SET total_amount = '4650' WHERE total_amount = '3700';
+Change stock to 480 in products where id is 1,UPDATE products SET stock = '480' WHERE id = '1';
+"Add a new record to the customers with values Grace Lee, grace.lee@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('Grace Lee', 'grace.lee@example.com', '2021-11-05');"
+Get product id and count of records from order items grouped by product id having count greater than 5,"SELECT product_id, COUNT(*) FROM order_items GROUP BY product_id HAVING COUNT(*) > 5;"
+List all employees where salary is greater than 50000,SELECT * FROM employees WHERE salary > 50000;
+List all customers where signup date is greater than 2021-01-15,SELECT * FROM customers WHERE signup_date > 2021-01-15;
+Remove records from orders where customer id is less than 22,DELETE FROM orders WHERE customer_id < 22;
+List all orders where total amount is greater than 3750,SELECT * FROM orders WHERE total_amount > 3750;
+Change customer id to 9 in orders where total amount is 4650,UPDATE orders SET customer_id = '9' WHERE total_amount = '4650';
+Get the total age from employees,SELECT SUM(age) FROM employees;
+List all employees where age is greater than 48,SELECT * FROM employees WHERE age > 48;
+List all order items where order id is greater than 28,SELECT * FROM order_items WHERE order_id > 28;
+Change price to 1800 in products where name is Smartphone,UPDATE products SET price = '1800' WHERE name = 'Smartphone';
+Change customer id to 32 in orders where id is 1,UPDATE orders SET customer_id = '32' WHERE id = '1';
+"Add a new record to the products with values Keyboard, 1400, 490","INSERT INTO products (name, price, stock) VALUES ('Keyboard', 1400, 490);"
+List all order items,SELECT * FROM order_items;
+Get order id and count of records from order items grouped by order id having count greater than 3,"SELECT order_id, COUNT(*) FROM order_items GROUP BY order_id HAVING COUNT(*) > 3;"
+"Add a new record to the products with values Smartphone, 1300, 170","INSERT INTO products (name, price, stock) VALUES ('Smartphone', 1300, 170);"
+List all customers where name is greater than Emma Wilson,SELECT * FROM customers WHERE name > Emma Wilson;
+List all customers where id not in (select customer id from orders),SELECT * FROM customers WHERE id NOT IN (SELECT customer_id FROM orders);
+List all employees where salary is greater than 30000,SELECT * FROM employees WHERE salary > 30000;
+Remove records from products where stock is less than 330,DELETE FROM products WHERE stock < 330;
+"Add a new record to the customers with values David Brown, helen.martin@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'helen.martin@example.com', '2021-11-05');"
+Change price to 200 in products where price is 1700,UPDATE products SET price = '200' WHERE price = '1700';
+Change customer id to 35 in orders where customer id is 36,UPDATE orders SET customer_id = '35' WHERE customer_id = '36';
+List all products where stock is greater than 20,SELECT * FROM products WHERE stock > 20;
+Remove records from products where stock is less than 320,DELETE FROM products WHERE stock < 320;
+List all customers where signup date is greater than 2021-11-05,SELECT * FROM customers WHERE signup_date > 2021-11-05;
+Remove records from orders where total amount is less than 4400,DELETE FROM orders WHERE total_amount < 4400;
+"Add a new record to the employees with values Alice Johnson, 41, Engineering, 60000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 41, 'Engineering', 60000);"
+Change name to Monitor in products where id is 1,UPDATE products SET name = 'Monitor' WHERE id = '1';
+"Add a new record to the employees with values John Doe, 50, Finance, 120000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 50, 'Finance', 120000);"
+"Add a new record to the products with values Monitor, 600, 160","INSERT INTO products (name, price, stock) VALUES ('Monitor', 600, 160);"
+Change name to Bob Lee in employees where department is Marketing,UPDATE employees SET name = 'Bob' Lee WHERE department = 'Marketing';
+List all employees sorted by department,SELECT * FROM employees ORDER BY department;
+"Add a new record to the orders with values 19, 4700, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (19, 4700, '2022-04-25');"
+Change total amount to 1500 in orders where order date is 2022-04-25,UPDATE orders SET total_amount = '1500' WHERE order_date = '2022-04-25';
+Get department and count of records from employees grouped by department having count greater than 10,"SELECT department, COUNT(*) FROM employees GROUP BY department HAVING COUNT(*) > 10;"
+List all employees where age is greater than 36,SELECT * FROM employees WHERE age > 36;
+List all products where stock is greater than 70,SELECT * FROM products WHERE stock > 70;
+Get salary and count of records from employees grouped by salary having count greater than 9,"SELECT salary, COUNT(*) FROM employees GROUP BY salary HAVING COUNT(*) > 9;"
+Remove records from orders where order date is less than 2022-03-20,DELETE FROM orders WHERE order_date < 2022-03-20;
+Change stock to 300 in products where id is 1,UPDATE products SET stock = '300' WHERE id = '1';
+"Add a new record to the customers with values Helen Martin, helen.martin@example.com, 2020-12-30","INSERT INTO customers (name, email, signup_date) VALUES ('Helen Martin', 'helen.martin@example.com', '2020-12-30');"
+Change total amount to 4900 in orders where id is 1,UPDATE orders SET total_amount = '4900' WHERE id = '1';
+Change salary to 45000 in employees where age is 49,UPDATE employees SET salary = '45000' WHERE age = '49';
+"Add a new record to the products with values Monitor, 800, 110","INSERT INTO products (name, price, stock) VALUES ('Monitor', 800, 110);"
+Change total amount to 4850 in orders where customer id is 22,UPDATE orders SET total_amount = '4850' WHERE customer_id = '22';
+Change total amount to 3250 in orders where order date is 2022-04-25,UPDATE orders SET total_amount = '3250' WHERE order_date = '2022-04-25';
+List all orders where customer id is greater than 45,SELECT * FROM orders WHERE customer_id > 45;
+"Add a new record to the products with values Desk Chair, 1800, 120","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 1800, 120);"
+Get signup date and count of records from customers grouped by signup date having count greater than 4,"SELECT signup_date, COUNT(*) FROM customers GROUP BY signup_date HAVING COUNT(*) > 4;"
+Get total amount and count of records from orders grouped by total amount having count greater than 2,"SELECT total_amount, COUNT(*) FROM orders GROUP BY total_amount HAVING COUNT(*) > 2;"
+Get total amount and count of records from orders grouped by total amount having count greater than 6,"SELECT total_amount, COUNT(*) FROM orders GROUP BY total_amount HAVING COUNT(*) > 6;"
+Remove records from orders where total amount is less than 550,DELETE FROM orders WHERE total_amount < 550;
+Change total amount to 4500 in orders where order date is 2022-04-25,UPDATE orders SET total_amount = '4500' WHERE order_date = '2022-04-25';
+Change age to 54 in employees where id is 1,UPDATE employees SET age = '54' WHERE id = '1';
+List all products where name is greater than Smartphone,SELECT * FROM products WHERE name > Smartphone;
+Get the total name from products,SELECT SUM(total_amount) FROM products;
+"Add a new record to the employees with values John Doe, 33, Sales, 75000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 33, 'Sales', 75000);"
+Change salary to 85000 in employees where id is 1,UPDATE employees SET salary = '85000' WHERE id = '1';
+Change age to 48 in employees where id is 1,UPDATE employees SET age = '48' WHERE id = '1';
+List all order items where quantity is greater than 15,SELECT * FROM order_items WHERE quantity > 15;
+Get age and count of records from employees grouped by age having count greater than 8,"SELECT age, COUNT(*) FROM employees GROUP BY age HAVING COUNT(*) > 8;"
+Get department and count of records from employees grouped by department having count greater than 3,"SELECT department, COUNT(*) FROM employees GROUP BY department HAVING COUNT(*) > 3;"
+List all order items where quantity is greater than 9,SELECT * FROM order_items WHERE quantity > 9;
+"Add a new record to the orders with values 44, 3000, 2022-03-20","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (44, 3000, '2022-03-20');"
+Remove records from orders where total amount is less than 3650,DELETE FROM orders WHERE total_amount < 3650;
+Get age and count of records from employees grouped by age having count greater than 5,"SELECT age, COUNT(*) FROM employees GROUP BY age HAVING COUNT(*) > 5;"
+List all products where stock is greater than 430,SELECT * FROM products WHERE stock > 430;
+Get name and count of records from employees grouped by name having count greater than 8,"SELECT name, COUNT(*) FROM employees GROUP BY name HAVING COUNT(*) > 8;"
+Get product id and count of records from order items grouped by product id having count greater than 6,"SELECT product_id, COUNT(*) FROM order_items GROUP BY product_id HAVING COUNT(*) > 6;"
+Remove records from orders where total amount is less than 4800,DELETE FROM orders WHERE total_amount < 4800;
+Change stock to 140 in products where stock is 60,UPDATE products SET stock = '140' WHERE stock = '60';
+Get stock and count of records from products grouped by stock having count greater than 5,"SELECT stock, COUNT(*) FROM products GROUP BY stock HAVING COUNT(*) > 5;"
+List all customers where signup date is greater than 2020-07-23,SELECT * FROM customers WHERE signup_date > 2020-07-23;
+List all products where stock is greater than 310,SELECT * FROM products WHERE stock > 310;
+Change total amount to 2700 in orders where total amount is 3400,UPDATE orders SET total_amount = '2700' WHERE total_amount = '3400';
+"Add a new record to the orders with values 28, 4050, 2022-05-30","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (28, 4050, '2022-05-30');"
+"Add a new record to the products with values Laptop, 1300, 490","INSERT INTO products (name, price, stock) VALUES ('Laptop', 1300, 490);"
+Change order date to 2022-03-20 in orders where order date is 2022-05-30,UPDATE orders SET order_date = '2022-03-20' WHERE order_date = '2022-05-30';
+Change name to Jane Smith in employees where salary is 105000,UPDATE employees SET name = 'Jane' Smith WHERE salary = '105000';
+"Add a new record to the products with values Desk Chair, 1600, 230","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 1600, 230);"
+List all orders where order date is greater than 2022-05-30,SELECT * FROM orders WHERE order_date > 2022-05-30;
+Remove records from orders where total amount is less than 850,DELETE FROM orders WHERE total_amount < 850;
+List all customers where signup date is greater than 2022-03-10,SELECT * FROM customers WHERE signup_date > 2022-03-10;
+Get order date and count of records from orders grouped by order date having count greater than 4,"SELECT order_date, COUNT(*) FROM orders GROUP BY order_date HAVING COUNT(*) > 4;"
+"Add a new record to the employees with values Jane Smith, 41, HR, 60000","INSERT INTO employees (name, age, department, salary) VALUES ('Jane Smith', 41, 'HR', 60000);"
+Remove records from employees where department is less than HR,DELETE FROM employees WHERE department < HR;
+"Add a new record to the employees with values Alice Johnson, 43, Marketing, 65000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 43, 'Marketing', 65000);"
+List all employees,SELECT * FROM employees;
+"Add a new record to the products with values Laptop, 1700, 90","INSERT INTO products (name, price, stock) VALUES ('Laptop', 1700, 90);"
+List all order items where order id is greater than 79,SELECT * FROM order_items WHERE order_id > 79;
+Get customer id and count of records from orders grouped by customer id having count greater than 7,"SELECT customer_id, COUNT(*) FROM orders GROUP BY customer_id HAVING COUNT(*) > 7;"
+List all employees where age is greater than 60,SELECT * FROM employees WHERE age > 60;
+Get stock and count of records from products grouped by stock having count greater than 7,"SELECT stock, COUNT(*) FROM products GROUP BY stock HAVING COUNT(*) > 7;"
+"Add a new record to the employees with values Bob Lee, 26, Sales, 50000","INSERT INTO employees (name, age, department, salary) VALUES ('Bob Lee', 26, 'Sales', 50000);"
+"Add a new record to the employees with values John Doe, 48, HR, 65000","INSERT INTO employees (name, age, department, salary) VALUES ('John Doe', 48, 'HR', 65000);"
+Remove records from products where price is less than 1300,DELETE FROM products WHERE price < 1300;
+"Add a new record to the products with values Smartphone, 600, 410","INSERT INTO products (name, price, stock) VALUES ('Smartphone', 600, 410);"
+"Add a new record to the customers with values Emma Wilson, emma.wilson@example.com, 2020-12-30","INSERT INTO customers (name, email, signup_date) VALUES ('Emma Wilson', 'emma.wilson@example.com', '2020-12-30');"
+Remove records from orders where total amount is less than 2250,DELETE FROM orders WHERE total_amount < 2250;
+Change customer id to 47 in orders where customer id is 38,UPDATE orders SET customer_id = '47' WHERE customer_id = '38';
+Change name to Carol King in employees where id is 1,UPDATE employees SET name = 'Carol' King WHERE id = '1';
+"Add a new record to the customers with values Frank Harris, emma.wilson@example.com, 2020-12-30","INSERT INTO customers (name, email, signup_date) VALUES ('Frank Harris', 'emma.wilson@example.com', '2020-12-30');"
+List all orders where customer id is greater than 34,SELECT * FROM orders WHERE customer_id > 34;
+"Add a new record to the employees with values Carol King, 44, HR, 115000","INSERT INTO employees (name, age, department, salary) VALUES ('Carol King', 44, 'HR', 115000);"
+Change customer id to 22 in orders where total amount is 1050,UPDATE orders SET customer_id = '22' WHERE total_amount = '1050';
+Remove records from employees where age is less than 28,DELETE FROM employees WHERE age < 28;
+List all products where stock is greater than 400,SELECT * FROM products WHERE stock > 400;
+Change stock to 380 in products where stock is 180,UPDATE products SET stock = '380' WHERE stock = '180';
+"Add a new record to the products with values Keyboard, 1100, 190","INSERT INTO products (name, price, stock) VALUES ('Keyboard', 1100, 190);"
+"Add a new record to the employees with values Alice Johnson, 58, Finance, 40000","INSERT INTO employees (name, age, department, salary) VALUES ('Alice Johnson', 58, 'Finance', 40000);"
+"Add a new record to the orders with values 2, 650, 2022-04-25","INSERT INTO orders (customer_id, total_amount, order_date) VALUES (2, 650, '2022-04-25');"
+Change name to Carol King in employees where salary is 85000,UPDATE employees SET name = 'Carol' King WHERE salary = '85000';
+Change customer id to 5 in orders where id is 1,UPDATE orders SET customer_id = '5' WHERE id = '1';
+Change order date to 2022-05-30 in orders where order date is 2022-05-30,UPDATE orders SET order_date = '2022-05-30' WHERE order_date = '2022-05-30';
+Change price to 1500 in products where name is Keyboard,UPDATE products SET price = '1500' WHERE name = 'Keyboard';
+Change name to Smartphone in products where stock is 330,UPDATE products SET name = 'Smartphone' WHERE stock = '330';
+List all orders where order date is greater than 2022-03-20,SELECT * FROM orders WHERE order_date > 2022-03-20;
+"Add a new record to the customers with values Grace Lee, emma.wilson@example.com, 2021-11-05","INSERT INTO customers (name, email, signup_date) VALUES ('Grace Lee', 'emma.wilson@example.com', '2021-11-05');"
+"Add a new record to the customers with values Frank Harris, frank.harris@example.com, 2020-12-30","INSERT INTO customers (name, email, signup_date) VALUES ('Frank Harris', 'frank.harris@example.com', '2020-12-30');"
+Get customer id and count of records from orders grouped by customer id having count greater than 2,"SELECT customer_id, COUNT(*) FROM orders GROUP BY customer_id HAVING COUNT(*) > 2;"
+Change salary to 110000 in employees where salary is 80000,UPDATE employees SET salary = '110000' WHERE salary = '80000';
+Get price and count of records from products grouped by price having count greater than 8,"SELECT price, COUNT(*) FROM products GROUP BY price HAVING COUNT(*) > 8;"
+"Add a new record to the customers with values Grace Lee, frank.harris@example.com, 2022-03-10","INSERT INTO customers (name, email, signup_date) VALUES ('Grace Lee', 'frank.harris@example.com', '2022-03-10');"
+List all products where stock is greater than 40,SELECT * FROM products WHERE stock > 40;
+List all products where stock is greater than 90,SELECT * FROM products WHERE stock > 90;
+Change customer id to 47 in orders where customer id is 50,UPDATE orders SET customer_id = '47' WHERE customer_id = '50';
+List all employees where name is greater than Carol King,SELECT * FROM employees WHERE name > Carol King;
+Change name to Monitor in products where name is Smartphone,UPDATE products SET name = 'Monitor' WHERE name = 'Smartphone';
+List all products where price is greater than 200,SELECT * FROM products WHERE price > 200;
+List all order items where quantity is greater than 17,SELECT * FROM order_items WHERE quantity > 17;
+List all products where price is greater than 800,SELECT * FROM products WHERE price > 800;
+Get name and count of records from customers grouped by name having count greater than 2,"SELECT name, COUNT(*) FROM customers GROUP BY name HAVING COUNT(*) > 2;"
+"Add a new record to the products with values Keyboard, 700, 100","INSERT INTO products (name, price, stock) VALUES ('Keyboard', 700, 100);"
+"Add a new record to the customers with values David Brown, emma.wilson@example.com, 2020-07-23","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'emma.wilson@example.com', '2020-07-23');"
+"Add a new record to the customers with values Frank Harris, grace.lee@example.com, 2020-07-23","INSERT INTO customers (name, email, signup_date) VALUES ('Frank Harris', 'grace.lee@example.com', '2020-07-23');"
+List all order items where quantity is greater than 14,SELECT * FROM order_items WHERE quantity > 14;
+List all products where price is greater than 600,SELECT * FROM products WHERE price > 600;
+Get name and count of records from products grouped by name having count greater than 6,"SELECT name, COUNT(*) FROM products GROUP BY name HAVING COUNT(*) > 6;"
+Change age to 56 in employees where salary is 55000,UPDATE employees SET age = '56' WHERE salary = '55000';
+Remove records from orders where customer id is less than 37,DELETE FROM orders WHERE customer_id < 37;
+Get name and count of records from employees grouped by name having count greater than 3,"SELECT name, COUNT(*) FROM employees GROUP BY name HAVING COUNT(*) > 3;"
+Remove records from employees where age is less than 34,DELETE FROM employees WHERE age < 34;
+"Add a new record to the products with values Desk Chair, 900, 500","INSERT INTO products (name, price, stock) VALUES ('Desk Chair', 900, 500);"
+Change price to 1300 in products where id is 1,UPDATE products SET price = '1300' WHERE id = '1';
+Change department to Finance in employees where id is 1,UPDATE employees SET department = 'Finance' WHERE id = '1';
+Remove records from products where price is less than 1400,DELETE FROM products WHERE price < 1400;
+Change total amount to 2400 in orders where total amount is 4450,UPDATE orders SET total_amount = '2400' WHERE total_amount = '4450';
+Remove records from orders where customer id is less than 42,DELETE FROM orders WHERE customer_id < 42;
+"Add a new record to the customers with values David Brown, grace.lee@example.com, 2021-01-15","INSERT INTO customers (name, email, signup_date) VALUES ('David Brown', 'grace.lee@example.com', '2021-01-15');"
+Change total amount to 50 in orders where total amount is 4200,UPDATE orders SET total_amount = '50' WHERE total_amount = '4200';
+Get names of customers who placed orders in the last month,"SELECT c.name FROM customers c JOIN orders o ON c.customer_id = o.customer_id WHERE o.order_date >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH);"
+Find products ordered more than 3 times,"SELECT p.name FROM products p JOIN (SELECT product_id, COUNT(*) as cnt FROM orders GROUP BY product_id) o ON p.product_id = o.product_id WHERE o.cnt > 3;"
+List orders with customer names,"SELECT o.order_id, c.name, o.total_amount FROM orders o JOIN customers c ON o.customer_id = c.customer_id;"
+List product names and total quantity sold,"SELECT p.name, SUM(oi.quantity) as total_sold FROM products p JOIN order_items oi ON p.product_id = oi.product_id GROUP BY p.name;"
+Find products ordered more than three times,"SELECT p.name FROM products p JOIN (SELECT product_id, COUNT(*) as total FROM order_items GROUP BY product_id) x ON p.product_id = x.product_id WHERE x.total > 3;"
+Show total sales made by each employee,"SELECT e.employee_id, e.first_name, SUM(o.total_amount) as total_sales FROM employees e JOIN orders o ON e.employee_id = o.employee_id GROUP BY e.employee_id;"
+List orders with customer names,"SELECT o.order_id, c.name FROM orders o JOIN customers c ON o.customer_id = c.customer_id;"
+Get total amount spent by each customer,"SELECT c.name, SUM(o.total_amount) AS total_spent FROM customers c JOIN orders o ON c.customer_id = o.customer_id GROUP BY c.name;"
+List employees and their department names,"SELECT e.name, d.department_name FROM employees e JOIN departments d ON e.department_id = d.department_id;"
+Find average total amount by customer,"SELECT customer_id, AVG(total_amount) FROM orders GROUP BY customer_id;"
+Get the maximum and minimum total amount from orders,"SELECT MAX(total_amount) AS max_amount, MIN(total_amount) AS min_amount FROM orders;"
+List distinct department names from employees table,SELECT DISTINCT department_name FROM departments;
+List top 5 highest total_amount orders,SELECT * FROM orders ORDER BY total_amount DESC LIMIT 5;
+Find customers located in USA or Canada,"SELECT * FROM customers WHERE country IN ('USA', 'Canada');"
+List orders placed between 2022-01-01 and 2022-03-31,SELECT * FROM orders WHERE order_date BETWEEN '2022-01-01' AND '2022-03-31';
+Search for employees whose name starts with 'Jo',SELECT * FROM employees WHERE name LIKE 'Jo%';
+Find customers who have more than 3 orders,"SELECT customer_id, COUNT(*) AS order_count FROM orders GROUP BY customer_id HAVING COUNT(*) > 3;"
+Get order IDs for orders not delivered yet,SELECT order_id FROM orders WHERE status <> 'Delivered';
+Select all products with price greater than average price,SELECT * FROM products WHERE price > (SELECT AVG(price) FROM products);
+Create a report of employee names and their manager names,"SELECT e.name AS employee_name, m.name AS manager_name FROM employees e LEFT JOIN employees m ON e.manager_id = m.employee_id;"
+Categorize orders as 'High' or 'Low' value based on total amount greater than 5000,"SELECT order_id, total_amount, CASE WHEN total_amount > 5000 THEN 'High' ELSE 'Low' END AS order_category FROM orders;"
+Get the maximum salary from the employees table.,SELECT MAX(salary) FROM employees;
+Find the minimum price in the products table.,SELECT MIN(price) FROM products;
+Calculate the average age of users.,SELECT AVG(age) FROM users;
+Find average order amount from orders table.,SELECT AVG(total_amount) FROM orders;
+Get customer names and their orders using join.,"SELECT c.name, o.order_id FROM customers c JOIN orders o ON c.customer_id = o.customer_id;"
+List employees and their departments.,"SELECT e.name, d.name FROM employees e JOIN departments d ON e.dept_id = d.dept_id;"
+Find the total revenue from sales.,SELECT SUM(revenue) FROM sales;
+Calculate the sum of prices in the inventory.,SELECT SUM(price) FROM inventory;
+List all products ordered by price descending.,SELECT * FROM products ORDER BY price DESC;
+Show students sorted by marks.,SELECT * FROM students ORDER BY marks;
+Search employees starting with 'An',SELECT * FROM employees WHERE name LIKE 'An%';
+Get employees where name begins with 'Ap',SELECT * FROM employees WHERE name LIKE 'Ap%';
+Search employees whose name starts with 'An',SELECT * FROM employees WHERE name LIKE 'An%';
+Search employees whose name starts with 'Ap',SELECT * FROM employees WHERE name LIKE 'Ap%';
+Search employees whose name starts with 'Jo',SELECT * FROM employees WHERE name LIKE 'Jo%';
+Search employees whose name starts with 'Mi',SELECT * FROM employees WHERE name LIKE 'Mi%';
+Search employees whose name starts with 'Sa',SELECT * FROM employees WHERE name LIKE 'Sa%';
+Get all records by joining customers with orders on customer id,SELECT * FROM customers JOIN orders ON customers.customer_id = orders.customer_id;
+Get all records by joining employees with departments on department id,SELECT * FROM employees JOIN departments ON employees.department_id = departments.department_id;
+Get all records by joining students with courses on course id,SELECT * FROM students JOIN courses ON students.course_id = courses.course_id;
+Get all records by joining products with order items on product id,SELECT * FROM products JOIN order_items ON products.product_id = order_items.product_id;
+Get all records by joining users with orders on user id,SELECT * FROM users JOIN orders ON users.user_id = orders.user_id;
+Get all records by joining authors with books on author id,SELECT * FROM authors JOIN books ON authors.author_id = books.author_id;
+Remove records from products where quantity is greater than  50,DELETE FROM products WHERE quantity > 50;
+Remove records from products where rating is greater than or eqaual to 4.5,DELETE FROM products WHERE rating >= 4.5;
+Remove records from products where age is less than or equal to  30,DELETE FROM products WHERE age <= 30;
+Remove records from products where status is eqaul to  'inactive',DELETE FROM products WHERE status = 'inactive';
+Find orders where order code contains 'blue',SELECT * FROM orders WHERE order_code LIKE '%blue%';
+Find orders where order code contains 'pro',SELECT * FROM orders WHERE order_code LIKE '%pro%';
+Find orders where order code contains 'admin',SELECT * FROM orders WHERE order_code LIKE '%admin%';
+Find orders where order code contains '2021',SELECT * FROM orders WHERE order_code LIKE '%2021%';
+Find orders where order code contains 'test',SELECT * FROM orders WHERE order_code LIKE '%test%';
+Remove records from products where age is less than or equal to 30,DELETE FROM products WHERE age <= 30;
+Remove records from products where age is greater than or equal to  60,DELETE FROM products WHERE age >= 60;
+Categorize orders as 'High' or 'Low' value based on total_amount greater than 5000,"SELECT order_id, total_amount, CASE WHEN total_amount > 5000 THEN 'High' ELSE 'Low' END AS value_category FROM orders;"
+Categorize products as 'Expensive' or 'Cheap' based on price greater than 1000,"SELECT product_id, name, CASE WHEN price > 1000 THEN 'Expensive' ELSE 'Cheap' END AS price_category FROM products;"
+Find employees who do not have a manager,SELECT name FROM employees WHERE manager_id IS NULL;
+Get products with price between 100 and 500,SELECT * FROM products WHERE price BETWEEN 100 AND 500;
+Find all customers whose name starts with 'Jo',SELECT * FROM customers WHERE name LIKE 'Jo%';
+Find all customers whose email ends with '@gmail.com',SELECT * FROM customers WHERE email LIKE '%@gmail.com';
+Find all products with description containing 'eco-friendly',SELECT * FROM products WHERE description LIKE '%eco-friendly%';
+Find employees whose name contains 'smith',SELECT * FROM employees WHERE name LIKE '%smith%';
+Get the total quantity sold per product,"SELECT product_id, SUM(quantity) AS total_quantity FROM order_items GROUP BY product_id;"
+Get average salary of employees in each department,"SELECT department_id, AVG(salary) AS avg_salary FROM employees GROUP BY department_id;"
+Find departments with more than 10 employees,"SELECT department_id, COUNT(*) FROM employees GROUP BY department_id HAVING COUNT(*) > 10;"
+Get the latest order placed by each customer,"SELECT customer_id, MAX(order_date) AS latest_order FROM orders GROUP BY customer_id;"
+Get names of employees hired after 2020-01-01,SELECT name FROM employees WHERE hire_date > '2020-01-01';
+Update product price to 999 where product id is 102,UPDATE products SET price = '999' WHERE product_id = '102';
+Update email to 'john.doe@example.com' where customer name is 'John Doe',UPDATE customers SET email = ''john.doe@example.com'' WHERE name = ''John' Doe';
+"Insert a new product with id 105, name 'Tablet', price 300","INSERT INTO products (product_id, name, price) VALUES (105, 'Tablet', 300);"
+Insert a new employee named 'Alice' into department 2 with salary 75000,"INSERT INTO employees (name, department_id, salary) VALUES ('Alice', 2, 75000);"
+Delete from employees where age is under 30,DELETE FROM employees WHERE age < 30;
+Remove employees with age greater than 50,DELETE FROM employees WHERE age > 50;
+Delete employees where age exceeds 45,DELETE FROM employees WHERE age > 45;
+Delete products where price is under 200,DELETE FROM products WHERE price < 200;
+Remove records from products where price is greater than 1000,DELETE FROM products WHERE price > 1000;
+Delete products where price exceeds 500,DELETE FROM products WHERE price > 500;
+Remove orders where total amount is less than 250,DELETE FROM orders WHERE total_amount < 250;
+Delete from orders where total amount is under 300,DELETE FROM orders WHERE total_amount < 300;
+Remove orders where total amount is greater than 1000,DELETE FROM orders WHERE total_amount > 1000;
+Delete orders where total amount exceeds 750,DELETE FROM orders WHERE total_amount > 750;
+Remove records from customers where signup date is before 2021-01-01,DELETE FROM customers WHERE signup_date < '2021-01-01';
+Delete customers where signup date is after 2022-12-31,DELETE FROM customers WHERE signup_date > '2022-12-31';
+Remove records from employees where department is 'HR',DELETE FROM employees WHERE department = 'HR';
+Delete employees where department equals Sales,DELETE FROM employees WHERE department = 'Sales';
+Remove records from products where name like 'A%',DELETE FROM products WHERE name LIKE 'A%';
+Delete products where name starts with 'Pro',DELETE FROM products WHERE name LIKE 'Pro%';
+Remove records from orders where order date is before 2022-01-01,DELETE FROM orders WHERE order_date < '2022-01-01';
+Delete orders where order date is after 2023-06-01,DELETE FROM orders WHERE order_date > '2023-06-01';
+Remove records from customers where email contains 'gmail',DELETE FROM customers WHERE email LIKE '%gmail%';
+Delete customers where email like '%@yahoo.com',DELETE FROM customers WHERE email LIKE '%@yahoo.com';
+Remove records from employees where name equals 'John Doe',DELETE FROM employees WHERE name = 'John Doe';
+Delete employees where name is not 'Jane Smith',DELETE FROM employees WHERE name != 'Jane Smith';
+Remove records from products where stock equals 0,DELETE FROM products WHERE stock = 0;
+Delete employees who are younger than 25,DELETE FROM employees WHERE age < 25;
+Remove orders where total amount is less than 500,DELETE FROM orders WHERE total_amount < 500;
+Remove products priced below 100,DELETE FROM products WHERE price < 100;
+Delete customers whose purchase count is under 2,DELETE FROM customers WHERE purchase_count < 2;
+Delete books with fewer than 100 pages,DELETE FROM books WHERE pages < 100;
+Delete users with access level under 3,DELETE FROM users WHERE access_level < 3;
+Remove employees who have worked for less than 2 years,DELETE FROM employees WHERE years_of_service < 2;
+Remove orders with total amount below 400,DELETE FROM orders WHERE total_amount < 400;
+Delete students scoring less than 40 marks,DELETE FROM students WHERE marks < 40;
+Delete entries where the count is fewer than 10,DELETE FROM entries WHERE count < 10;
+Delete employees aged 18 or younger,DELETE FROM employees WHERE age <= 18;
+Delete orders where amount is at most 1000,DELETE FROM orders WHERE total_amount <= 1000;
+Remove students who scored 35 or less,DELETE FROM students WHERE marks <= 35;
+Delete customers who made 1 or fewer purchases,DELETE FROM customers WHERE purchase_count <= 1;
+Delete all items with quantity not more than 20,DELETE FROM items WHERE quantity <= 20;
+Delete employees who joined before 2020-01-01,DELETE FROM employees WHERE joining_date < '2020-01-01';
+Remove orders made before March 2023,DELETE FROM orders WHERE order_date < '2023-03-01';
+Delete appointments scheduled before 2024-01-01,DELETE FROM appointments WHERE appointment_date < '2024-01-01';
+Remove customers who signed up on or before 2021-12-31,DELETE FROM customers WHERE signup_date <= '2021-12-31';
+Delete employees younger than 30 and with salary below 50000,DELETE FROM employees WHERE age < 30 AND salary < 50000;
+Remove products with price less than 100 and quantity under 10,DELETE FROM products WHERE price < 100 AND quantity < 10;
+Delete from employees where salary is greater than or equal to 10,DELETE FROM employees WHERE salary >= 10;
+Delete from employees where age is greater than 10,DELETE FROM employees WHERE age > 10;
+Delete from orders where quantity is less than or equal to 10,DELETE FROM orders WHERE quantity <= 10;
+Delete from products where price is at most 100,DELETE FROM products WHERE price <= 100;
+Delete from orders where quantity is different from 10,DELETE FROM orders WHERE quantity != 10;
+Delete from customers where signup date is more than 2022-01-01,DELETE FROM customers WHERE signup_date > '2022-01-01';
+Delete from students where grade is exceeds 10,DELETE FROM students WHERE grade > 10;
+Delete from orders where order date is no less than 2022-01-01,DELETE FROM orders WHERE order_date >= '2022-01-01';
+Delete from employees where age is greater than or equal to 10,DELETE FROM employees WHERE age >= 10;
+Delete from products where quantity is exceeds 10,DELETE FROM products WHERE quantity > 10;
+Delete from employees where department id is less than 10,DELETE FROM employees WHERE department_id < 10;
+Delete from students where marks is no less than 10,DELETE FROM students WHERE marks >= 10;
+Delete from products where price is greater than or equal to 100,DELETE FROM products WHERE price >= 100;
+Delete from customers where signup date is less than or equal to 2022-01-01,DELETE FROM customers WHERE signup_date <= '2022-01-01';
+Delete from products where price is exceeds 100,DELETE FROM products WHERE price > 100;
+Delete from students where grade is no more than 10,DELETE FROM students WHERE grade <= 10;
+Delete from customers where age is no more than 10,DELETE FROM customers WHERE age <= 10;
+Delete from employees where salary is less than 10,DELETE FROM employees WHERE salary < 10;
+Delete from customers where purchase count is below 10,DELETE FROM customers WHERE purchase_count < 10;
+Delete from products where stock is no more than 10,DELETE FROM products WHERE stock <= 10;
+Delete from products where stock is more than 10,DELETE FROM products WHERE stock > 10;
+Delete from employees where salary is at most 10,DELETE FROM employees WHERE salary <= 10;
+Delete from students where grade is at least 10,DELETE FROM students WHERE grade >= 10;
+Delete from employees where years of service is less than 10,DELETE FROM employees WHERE years_of_service < 10;
+Delete from customers where signup date is no less than 2022-01-01,DELETE FROM customers WHERE signup_date >= '2022-01-01';
+Delete from customers where purchase count is less than 10,DELETE FROM customers WHERE purchase_count < 10;
+Delete from employees where age is at least 10,DELETE FROM employees WHERE age >= 10;
+Delete from students where marks is greater than 10,DELETE FROM students WHERE marks > 10;
+Delete from students where grade is not equal to 10,DELETE FROM students WHERE grade != 10;
+Delete from customers where purchase count is less than or equal to 10,DELETE FROM customers WHERE purchase_count <= 10;
+Delete from orders where quantity is greater than 10,DELETE FROM orders WHERE quantity > 10;
+Delete from students where grade is less than or equal to 10,DELETE FROM students WHERE grade <= 10;
+Delete from employees where salary is at least 10,DELETE FROM employees WHERE salary >= 10;
+Delete from customers where age is below 10,DELETE FROM customers WHERE age < 10;
+Delete from employees where salary is less than or equal to 10,DELETE FROM employees WHERE salary <= 10;
+Delete from orders where total amount is greater than or equal to 10,DELETE FROM orders WHERE total_amount >= 10;
+Delete from customers where age is not equal to 10,DELETE FROM customers WHERE age != 10;
+Delete from employees where department id is at least 10,DELETE FROM employees WHERE department_id >= 10;
+Delete from orders where order date is at most 2022-01-01,DELETE FROM orders WHERE order_date <= '2022-01-01';
+Delete from customers where signup date is at least 2022-01-01,DELETE FROM customers WHERE signup_date >= '2022-01-01';
+Delete from students where grade is below 10,DELETE FROM students WHERE grade < 10;
+Delete from products where price is more than 100,DELETE FROM products WHERE price > 100;
+Delete from students where attendance is no less than 10,DELETE FROM students WHERE attendance >= 10;
+Delete from employees where salary is under 10,DELETE FROM employees WHERE salary < 10;
+Delete from customers where purchase count is greater than 10,DELETE FROM customers WHERE purchase_count > 10;
+Delete from orders where total amount is greater than 10,DELETE FROM orders WHERE total_amount > 10;
+Delete from customers where signup date is less than 2022-01-01,DELETE FROM customers WHERE signup_date < '2022-01-01';
+Delete from employees where years of service is exceeds 10,DELETE FROM employees WHERE years_of_service > 10;
+Delete from products where quantity is at most 10,DELETE FROM products WHERE quantity <= 10;
+Delete from orders where total amount is less than 10,DELETE FROM orders WHERE total_amount < 10;
+Delete from students where marks is greater than or equal to 10,DELETE FROM students WHERE marks >= 10;
+Delete from customers where age is greater than 10,DELETE FROM customers WHERE age > 10;
+Delete from students where marks is not equal to 10,DELETE FROM students WHERE marks != 10;
+Delete from customers where age is not equal 10,DELETE FROM customers WHERE age != 10;
+Delete from students where attendance is different from 10,DELETE FROM students WHERE attendance != 10;
+Delete from students where marks is different from 10,DELETE FROM students WHERE marks != 10;
+Delete from products where price is at least 100,DELETE FROM products WHERE price >= 100;
+Delete from students where attendance is greater than or equal to 10,DELETE FROM students WHERE attendance >= 10;
+Delete from orders where total amount is not equal 20,DELETE FROM orders WHERE total_amount != 20;
+Delete from products where quantity is under 10,DELETE FROM products WHERE quantity < 10;
+Delete from orders where quantity is no more than 10,DELETE FROM orders WHERE quantity <= 10;
+Delete from products where stock is greater than 10,DELETE FROM products WHERE stock > 10;
+Delete from products where stock is less than 10,DELETE FROM products WHERE stock < 10;
+Delete from orders where total amount is more than 10,DELETE FROM orders WHERE total_amount > 10;
+Delete from orders where quantity is no less than 10,DELETE FROM orders WHERE quantity >= 10;
+Delete from orders where total amount is exceeds 10,DELETE FROM orders WHERE total_amount > 10;
+Delete from products where price is less than or equal to 100,DELETE FROM products WHERE price <= 100;
+Delete from orders where order date is greater than or equal to 2022-01-01,DELETE FROM orders WHERE order_date >= '2022-01-01';
+Delete from products where price is not equal to 100,DELETE FROM products WHERE price != 100;
+Delete from customers where age is different from 10,DELETE FROM customers WHERE age != 10;
+Delete from customers where signup date is not equal to 2022-01-01,DELETE FROM customers WHERE signup_date != '2022-01-01';
+Delete from products where price is greater than 100,DELETE FROM products WHERE price > 100;
+Delete from employees where salary is different from 10,DELETE FROM employees WHERE salary != 10;
+Delete from products where stock is at most 10,DELETE FROM products WHERE stock <= 10;
+Delete from orders where order date is less than 2022-01-01,DELETE FROM orders WHERE order_date < '2022-01-01';
+Delete from orders where order date is more than 2022-01-01,DELETE FROM orders WHERE order_date > '2022-01-01';
+Delete from employees where age is no more than 10,DELETE FROM employees WHERE age <= 10;
+Delete from employees where department id is no less than 10,DELETE FROM employees WHERE department_id >= 10;
+Delete from customers where purchase count is different from 10,DELETE FROM customers WHERE purchase_count != 10;
+Delete from customers where purchase count is greater than or equal to 10,DELETE FROM customers WHERE purchase_count >= 10;
+Delete from orders where quantity is more than 10,DELETE FROM orders WHERE quantity > 10;
+Delete from orders where total_amount is no more than 10,DELETE FROM orders WHERE total_amount <= 10;
+Delete from students where attendance is below 10,DELETE FROM students WHERE attendance < 10;
+Delete from students where marks is not equal 10,DELETE FROM students WHERE marks != 10;
+Delete from products where quantity is more than 10,DELETE FROM products WHERE quantity > 10;
+Delete from employees where years of service is under 10,DELETE FROM employees WHERE years_of_service < 10;
+Delete from employees where age is not equal to 10,DELETE FROM employees WHERE age != 10;
+Delete from employees where years of service is no more than 10,DELETE FROM employees WHERE years_of_service <= 10;
+Delete from employees where salary is not equal 10,DELETE FROM employees WHERE salary != 10;
+Delete from employees where years of service is not equal to 10,DELETE FROM employees WHERE years_of_service != 10;
+Delete from students where attendance is not equal 10,DELETE FROM students WHERE attendance != 10;
+Delete from products where quantity is not equal 10,DELETE FROM products WHERE quantity != 10;
+Delete from customers where purchase count is no less than 10,DELETE FROM customers WHERE purchase_count >= 10;
+Delete from employees where department id is greater than 10,DELETE FROM employees WHERE department_id > 10;
+Delete from products where quantity is below 10,DELETE FROM products WHERE quantity < 10;
+Delete from customers where age is at least 10,DELETE FROM customers WHERE age >= 10;
+Delete from orders where order date is under 2022-01-01,DELETE FROM orders WHERE order_date < '2022-01-01';
+Delete from employees where years of service is no less than 10,DELETE FROM employees WHERE years_of_service >= 10;
+Delete from customers where purchase count is not equal to 10,DELETE FROM customers WHERE purchase_count != 10;
+Delete from products where quantity is no less than 10,DELETE FROM products WHERE quantity >= 10;
+Delete from orders where order date is less than or equal to 2022-01-01,DELETE FROM orders WHERE order_date <= '2022-01-01';
+Delete from products where quantity is greater than 10,DELETE FROM products WHERE quantity > 10;
+Delete from employees where salary is no less than 10,DELETE FROM employees WHERE salary >= 10;
+Delete from students where grade is greater than 10,DELETE FROM students WHERE grade > 10;
+Delete from students where attendance is no more than 10,DELETE FROM students WHERE attendance <= 10;
+Delete from students where grade is not equal 10,DELETE FROM students WHERE grade != 10;
+Delete from products where stock is not equal to 10,DELETE FROM products WHERE stock != 10;
+Delete from employees where age is less than 10,DELETE FROM employees WHERE age < 10;
+Delete from employees where age is below 10,DELETE FROM employees WHERE age < 10;
+Delete from orders where order date is below 2022-01-01,DELETE FROM orders WHERE order_date < '2022-01-01';
+Delete from employees where department id is under 10,DELETE FROM employees WHERE department_id < 10;
+Delete from orders where quantity is at least 10,DELETE FROM orders WHERE quantity >= 10;
+Delete from products where price is different from 100,DELETE FROM products WHERE price != 100;
+Delete from products where quantity is greater than or equal to 10,DELETE FROM products WHERE quantity >= 10;
+Delete from customers where signup date is exceeds 2022-01-01,DELETE FROM customers WHERE signup_date > '2022-01-01';
+Delete from orders where quantity is less than 10,DELETE FROM orders WHERE quantity < 10;
+Delete from orders where order date is at least 2022-01-01,DELETE FROM orders WHERE order_date >= '2022-01-01';
+Delete from customers where signup date is below 2022-01-01,DELETE FROM customers WHERE signup_date < '2022-01-01';
+Delete from customers where purchase count is exceeds 10,DELETE FROM customers WHERE purchase_count > 10;
+Delete from orders where quantity is exceeds 10,DELETE FROM orders WHERE quantity > 10;
+List all products priced below 100,SELECT * FROM products WHERE price < 100;
+Find employees with experience less than 5 years,SELECT * FROM employees WHERE experience < 5;
+Get orders with quantity less than 10,SELECT * FROM orders WHERE quantity < 10;
+Show customers who signed up before 2022-06-08,SELECT * FROM customers WHERE signup_date < '2022-06-08';
+Delete from orders where total is below 500,DELETE FROM orders WHERE total < 500;
+List products with price less than or equal to 100,SELECT * FROM products WHERE price <= 100;
+Find employees with age no more than 30,SELECT * FROM employees WHERE age <= 30;
+Get all orders with quantity less than or equal to 20,SELECT * FROM orders WHERE quantity <= 20;
+Delete customers with purchase count not exceeding 5,DELETE FROM customers WHERE purchase_count <= 5;
+Find students whose marks are 40 or below,SELECT * FROM students WHERE marks <= 40;
+List products with price more than 100,SELECT * FROM products WHERE price > 100;
+Find employees older than 40,SELECT * FROM employees WHERE age > 40;
+Get orders where quantity exceeds 10,SELECT * FROM orders WHERE quantity > 10;
+Show customers who signed up after 2023-10-09,SELECT * FROM customers WHERE signup_date > '2023-10-09';
+Delete from orders where total exceeds 1000,DELETE FROM orders WHERE total > 1000;
+List products priced at least 200,SELECT * FROM products WHERE price >= 200;
+Find employees aged 50 or more,SELECT * FROM employees WHERE age >= 50;
+Get all orders with quantity of 15 or more,SELECT * FROM orders WHERE quantity >= 15;
+Delete customers with 3 or more purchases,DELETE FROM customers WHERE purchase_count >= 3;
+Find students with marks not less than 75,SELECT * FROM students WHERE marks >= 75;
+List products priced exactly 250,SELECT * FROM products WHERE price = 250;
+Find employees aged 30,SELECT * FROM employees WHERE age = 30;
+Get orders with quantity equal to 5,SELECT * FROM orders WHERE quantity = 5;
+Show customers who signed up on 2020-02-25,SELECT * FROM customers WHERE signup_date = '2020-02-25';
+Delete from orders where total is 999,DELETE FROM orders WHERE total = 999;
+List products not priced at 100,SELECT * FROM products WHERE price != 100;
+Find employees not aged 40,SELECT * FROM employees WHERE age != 40;
+Get orders where quantity is not 1,SELECT * FROM orders WHERE quantity != 1;
+Show customers not signed up on 2023-06-29,SELECT * FROM customers WHERE signup_date != '2023-06-29';
+Delete orders where total is not 500,DELETE FROM orders WHERE total != 500;
+Show customers who signed up before 2024-02-01,SELECT * FROM customers WHERE signup_date < '2024-02-01';
+Show customers who signed up after 2024-07-31,SELECT * FROM customers WHERE signup_date > '2024-07-31';
+Show customers who signed up on 2021-12-15,SELECT * FROM customers WHERE signup_date = '2021-12-15';
+Show customers not signed up on 2023-10-06,SELECT * FROM customers WHERE signup_date != '2023-10-06';
+Show customers who signed up before 2023-04-29,SELECT * FROM customers WHERE signup_date < '2023-04-29';
+Show customers who signed up after 2023-06-06,SELECT * FROM customers WHERE signup_date > '2023-06-06';
+Show customers who signed up on 2024-11-29,SELECT * FROM customers WHERE signup_date = '2024-11-29';
+Show customers not signed up on 2024-03-12,SELECT * FROM customers WHERE signup_date != '2024-03-12';
+Show customers who signed up before 2022-09-22,SELECT * FROM customers WHERE signup_date < '2022-09-22';
+Update product name to 'Desk Chair' where product_id is 101,UPDATE products SET name = 'Desk Chair' WHERE product_id = 101;
+Remove records from products where name is less than 'Keyboard',DELETE FROM products WHERE name < 'Keyboard';
+Delete from orders where total amount is less than 2450,DELETE FROM orders WHERE total_amount < 2450;
+Update order date to '2022-02-14' in orders where order date is '2022-03-20',UPDATE orders SET order_date = '2022-02-14' WHERE order_date = '2022-03-20';
+Categorize orders as 'High' or 'Low' based on total_amount greater than 5000,"SELECT order_id, total_amount, CASE WHEN total_amount > 5000 THEN 'High' ELSE 'Low' END AS value_category FROM orders;"
+Categorize products as 'Expensive' or 'Cheap' based on price greater than 1000,"SELECT name, CASE WHEN price > 1000 THEN 'Expensive' ELSE 'Cheap' END AS price_category FROM products;"
+Update name to 'Office Desk' in products where name is 'Wooden Table',UPDATE products SET name = 'Office Desk' WHERE name = 'Wooden Table';
+Remove employees whose name is less than 'John',DELETE FROM employees WHERE name < 'John';
+Remove orders placed before '2023-01-01',DELETE FROM orders WHERE order_date < '2023-01-01';
+Show customers whose last purchase was before '2024-01-01',SELECT * FROM customers WHERE last_purchase < '2024-01-01';
+List products where price is greater than or equal to 500,SELECT * FROM products WHERE price >= 500;
+Find employees whose salary is less than or equal to 30000,SELECT * FROM employees WHERE salary <= 30000;
+Show employees not in department 'HR',SELECT * FROM employees WHERE department != 'HR';
+List employees who joined after '2020-01-01',SELECT * FROM employees WHERE join_date > '2020-01-01';
+Show products not named 'Monitor',SELECT * FROM products WHERE name != 'Monitor';
+Update salary to 80000 in employees where name is 'Alice',UPDATE employees SET salary = 80000 WHERE name = 'Alice';
+Delete customers whose signup date is before '2022-06-01',DELETE FROM customers WHERE signup_date < '2022-06-01';
+List orders where total amount is not equal to 5000,SELECT * FROM orders WHERE total_amount != 5000;
+Find managers aged greater than 50,SELECT * FROM managers WHERE age > 50;
+Categorize employees as 'Senior' or 'Junior' based on years_of_experience > 5,"SELECT name, CASE WHEN years_of_experience > 5 THEN 'Senior' ELSE 'Junior' END AS level FROM employees;"
+"Mark orders as 'Old' if before '2023-01-01', else 'Recent'","SELECT order_id, CASE WHEN order_date < '2023-01-01' THEN 'Old' ELSE 'Recent' END AS status FROM orders;"
+"Classify products by price: 'Premium' if > 2000, else 'Standard'","SELECT name, CASE WHEN price > 2000 THEN 'Premium' ELSE 'Standard' END AS category FROM products;"
+Get customers and mark as 'VIP' if total_spent > 10000,"SELECT name, CASE WHEN total_spent > 10000 THEN 'VIP' ELSE 'Regular' END AS status FROM customers;"
+Tag employees as 'Experienced' or 'Fresher' based on years > 3,"SELECT name, CASE WHEN years > 3 THEN 'Experienced' ELSE 'Fresher' END AS experience_level FROM employees;"
+Show total orders placed by each customer,"SELECT customer_id, COUNT(*) FROM orders GROUP BY customer_id;"
+Get average salary for each department,"SELECT department, AVG(salary) FROM employees GROUP BY department;"
+List count of products by category having more than 5 items,"SELECT category, COUNT(*) FROM products GROUP BY category HAVING COUNT(*) > 5;"
+Get max order amount per customer,"SELECT customer_id, MAX(total_amount) FROM orders GROUP BY customer_id;"
+List employees grouped by department with average age,"SELECT department, AVG(age) FROM employees GROUP BY department;"
+Update department to 'Finance' where employee id is 20,UPDATE employees SET department = 'Finance' WHERE employee_id = 20;
+Remove products priced over 5000,DELETE FROM products WHERE price > 5000;
+Update join date to '2020-01-01' for employee with id 3,UPDATE employees SET join_date = '2020-01-01' WHERE employee_id = 3;
+Delete customers whose name is 'Bob',DELETE FROM customers WHERE name = 'Bob';
+Update product price to 999 where product name is 'Mouse',UPDATE products SET price = 999 WHERE name = 'Mouse';
+Find orders not made on '2023-06-01',SELECT * FROM orders WHERE order_date != '2023-06-01';
+Show customers whose city is not 'Delhi',SELECT * FROM customers WHERE city != 'Delhi';
+List employees earning more than 70000,SELECT * FROM employees WHERE salary > 70000;
+Remove items with quantity less than 5,DELETE FROM order_items WHERE quantity < 5;
+Get products not named 'Laptop',SELECT * FROM products WHERE name != 'Laptop';
+Mark customers as 'Frequent' if purchase_count > 10,"SELECT name, CASE WHEN purchase_count > 10 THEN 'Frequent' ELSE 'Occasional' END AS customer_type FROM customers;"
+Classify orders as 'Bulk' if quantity greater than 50,"SELECT order_id, CASE WHEN quantity > 50 THEN 'Bulk' ELSE 'Single' END AS order_type FROM orders;"
+Group employees by department with max salary,"SELECT department, MAX(salary) FROM employees GROUP BY department;"
+Update status to 'Inactive' where last_login is before '2023-01-01',UPDATE users SET status = 'Inactive' WHERE last_login < '2023-01-01';
+Show employees with designation not equal to 'Manager',SELECT * FROM employees WHERE designation != 'Manager';
+Delete from orders where quantity is less than 100,DELETE FROM orders WHERE quantity < 100;
+Remove all employees whose age is not equal to 30,DELETE FROM employees WHERE age != 30;
+Delete products where price is no more than 999,DELETE FROM products WHERE price <= 999;
+Remove students whose score is no less than 40,DELETE FROM students WHERE score >= 40;
+Get customers whose signup date is earlier than 2023-01-01,SELECT * FROM customers WHERE signup_date < '2023-01-01';
+List employees where years_of_experience is not equal to 5,SELECT * FROM employees WHERE years_of_experience != 5;
+Show items priced below 200,SELECT * FROM items WHERE price < 200;
+Get orders with delivery time greater than or equal to 3 days,SELECT * FROM orders WHERE delivery_time >= 3;
+Delete from products where stock is under 20,DELETE FROM products WHERE stock < 20;
+Find users whose login count is not less than 10,SELECT * FROM users WHERE login_count >= 10;
+Get records from products where quantity is less than 5,SELECT * FROM products WHERE quantity < 5;
+Get records from employees where price is less than '2022-01-01',SELECT * FROM employees WHERE price < '2022-01-01';
+Get records from orders where signup_date is less than '2022-01-01',SELECT * FROM orders WHERE signup_date < '2022-01-01';
+Get records from employees where price is before 100,SELECT * FROM employees WHERE price < 100;
+Get records from products where quantity is less than 100,SELECT * FROM products WHERE quantity < 100;
+Get records from products where experience is under 20,SELECT * FROM products WHERE experience < 20;
+Get records from orders where price is before 5,SELECT * FROM orders WHERE price < 5;
+Get records from customers where stock is before 5,SELECT * FROM customers WHERE stock < 5;
+Get records from products where stock is below 50,SELECT * FROM products WHERE stock < 50;
+Get records from employees where signup_date is below 20,SELECT * FROM employees WHERE signup_date < 20;
+Get records from orders where stock is below 50,SELECT * FROM orders WHERE stock < 50;
+Get records from customers where price is less than 20,SELECT * FROM customers WHERE price < 20;
+Get records from orders where stock is under '2023-06-30',SELECT * FROM orders WHERE stock < '2023-06-30';
+Get records from products where experience is before 100,SELECT * FROM products WHERE experience < 100;
+Get records from orders where price is below '2022-01-01',SELECT * FROM orders WHERE price < '2022-01-01';
+Get records from orders where signup_date is before 5,SELECT * FROM orders WHERE signup_date < 5;
+Get records from orders where stock is less than '2022-01-01',SELECT * FROM orders WHERE stock < '2022-01-01';
+Get records from employees where experience is less than '2022-01-01',SELECT * FROM employees WHERE experience < '2022-01-01';
+Get records from orders where order_date is under '2022-01-01',SELECT * FROM orders WHERE order_date < '2022-01-01';
+Get records from products where experience is before 20,SELECT * FROM products WHERE experience < 20;
+Get records from products where signup_date is below '2022-01-01',SELECT * FROM products WHERE signup_date < '2022-01-01';
+Get records from customers where signup_date is under 50,SELECT * FROM customers WHERE signup_date < 50;
+Get records from employees where stock is less than 5,SELECT * FROM employees WHERE stock < 5;
+Get records from employees where order_date is before '2022-01-01',SELECT * FROM employees WHERE order_date < '2022-01-01';
+Get records from orders where order_date is before 100,SELECT * FROM orders WHERE order_date < 100;
+Get records from employees where stock is less than 20,SELECT * FROM employees WHERE stock < 20;
+Get records from employees where quantity is under '2023-06-30',SELECT * FROM employees WHERE quantity < '2023-06-30';
+Get records from orders where order_date is under '2023-06-30',SELECT * FROM orders WHERE order_date < '2023-06-30';
+Get records from customers where stock is less than '2023-06-30',SELECT * FROM customers WHERE stock < '2023-06-30';
+Get records from products where stock is under '2022-01-01',SELECT * FROM products WHERE stock < '2022-01-01';
+Get records from employees where price is under 100,SELECT * FROM employees WHERE price < 100;
+Get records from products where price is below '2023-06-30',SELECT * FROM products WHERE price < '2023-06-30';
+Get records from customers where stock is before 20,SELECT * FROM customers WHERE stock < 20;
+Get records from customers where quantity is less than '2023-06-30',SELECT * FROM customers WHERE quantity < '2023-06-30';
+Get records from customers where quantity is before 50,SELECT * FROM customers WHERE quantity < 50;
+Get records from products where signup_date is below 5,SELECT * FROM products WHERE signup_date < 5;
+Get records from customers where stock is before 100,SELECT * FROM customers WHERE stock < 100;
+Get records from products where stock is below 100,SELECT * FROM products WHERE stock < 100;
+Get records from customers where signup_date is under '2023-06-30',SELECT * FROM customers WHERE signup_date < '2023-06-30';
+Get records from employees where price is under '2022-01-01',SELECT * FROM employees WHERE price < '2022-01-01';
+Get records from orders where quantity is less than 50,SELECT * FROM orders WHERE quantity < 50;
+Get records from customers where experience is under '2022-01-01',SELECT * FROM customers WHERE experience < '2022-01-01';
+Get records from orders where stock is below 100,SELECT * FROM orders WHERE stock < 100;
+Get records from products where signup_date is before 50,SELECT * FROM products WHERE signup_date < 50;
+Get records from products where experience is below 100,SELECT * FROM products WHERE experience < 100;
+Get records from orders where order_date is under 5,SELECT * FROM orders WHERE order_date < 5;
+Get records from customers where quantity is before '2023-06-30',SELECT * FROM customers WHERE quantity < '2023-06-30';
+Get records from customers where price is before 20,SELECT * FROM customers WHERE price < 20;
+Get records from products where price is no more than '2023-06-30',SELECT * FROM products WHERE price <= '2023-06-30';
+Get records from employees where experience is no more than 20,SELECT * FROM employees WHERE experience <= 20;
+Get records from orders where experience is less than or equal to '2023-06-30',SELECT * FROM orders WHERE experience <= '2023-06-30';
+Get records from employees where price is at most 20,SELECT * FROM employees WHERE price <= 20;
+Get records from customers where order_date is no more than 50,SELECT * FROM customers WHERE order_date <= 50;
+Get records from products where experience is at most '2022-01-01',SELECT * FROM products WHERE experience <= '2022-01-01';
+Get records from orders where order_date is no more than 5,SELECT * FROM orders WHERE order_date <= 5;
+Get records from customers where signup_date is less than or equal to 50,SELECT * FROM customers WHERE signup_date <= 50;
+Get records from customers where experience is no more than 100,SELECT * FROM customers WHERE experience <= 100;
+Get records from products where quantity is at most '2022-01-01',SELECT * FROM products WHERE quantity <= '2022-01-01';
+Get records from employees where experience is no more than 5,SELECT * FROM employees WHERE experience <= 5;
+Get records from products where signup_date is less than or equal to 50,SELECT * FROM products WHERE signup_date <= 50;
+Get records from orders where order_date is no more than 100,SELECT * FROM orders WHERE order_date <= 100;
+Get records from products where price is at most 50,SELECT * FROM products WHERE price <= 50;
+Get records from employees where stock is no more than '2022-01-01',SELECT * FROM employees WHERE stock <= '2022-01-01';
+Get records from orders where signup_date is less than or equal to 100,SELECT * FROM orders WHERE signup_date <= 100;
+Get records from products where quantity is at most '2023-06-30',SELECT * FROM products WHERE quantity <= '2023-06-30';
+Get records from customers where experience is at most 100,SELECT * FROM customers WHERE experience <= 100;
+Get records from orders where price is no more than '2022-01-01',SELECT * FROM orders WHERE price <= '2022-01-01';
+Get records from employees where quantity is at most 5,SELECT * FROM employees WHERE quantity <= 5;
+Get records from customers where experience is no more than '2022-01-01',SELECT * FROM customers WHERE experience <= '2022-01-01';
+Get records from orders where stock is no more than 50,SELECT * FROM orders WHERE stock <= 50;
+Get records from products where signup_date is less than or equal to 20,SELECT * FROM products WHERE signup_date <= 20;
+Get records from orders where quantity is no more than '2023-06-30',SELECT * FROM orders WHERE quantity <= '2023-06-30';
+Get records from products where experience is no more than '2022-01-01',SELECT * FROM products WHERE experience <= '2022-01-01';
+Get records from products where order_date is at most '2023-06-30',SELECT * FROM products WHERE order_date <= '2023-06-30';
+Get records from products where quantity is no more than '2023-06-30',SELECT * FROM products WHERE quantity <= '2023-06-30';
+Get records from customers where experience is at most '2022-01-01',SELECT * FROM customers WHERE experience <= '2022-01-01';
+Get records from employees where stock is less than or equal to '2022-01-01',SELECT * FROM employees WHERE stock <= '2022-01-01';
+Get records from customers where signup_date is less than or equal to '2022-01-01',SELECT * FROM customers WHERE signup_date <= '2022-01-01';
+Get records from customers where stock is at most '2022-01-01',SELECT * FROM customers WHERE stock <= '2022-01-01';
+Get records from customers where price is less than or equal to 50,SELECT * FROM customers WHERE price <= 50;
+Get records from customers where stock is less than or equal to 50,SELECT * FROM customers WHERE stock <= 50;
+Get records from employees where signup_date is no more than 100,SELECT * FROM employees WHERE signup_date <= 100;
+Get records from employees where experience is less than or equal to 100,SELECT * FROM employees WHERE experience <= 100;
+Get records from orders where order_date is at most 20,SELECT * FROM orders WHERE order_date <= 20;
+Get records from orders where stock is no more than '2022-01-01',SELECT * FROM orders WHERE stock <= '2022-01-01';
+Get records from orders where experience is no more than '2023-06-30',SELECT * FROM orders WHERE experience <= '2023-06-30';
+Get records from customers where quantity is less than or equal to '2023-06-30',SELECT * FROM customers WHERE quantity <= '2023-06-30';
+Get records from employees where signup_date is at most 50,SELECT * FROM employees WHERE signup_date <= 50;
+Get records from customers where quantity is less than or equal to 100,SELECT * FROM customers WHERE quantity <= 100;
+Get records from customers where price is no more than 100,SELECT * FROM customers WHERE price <= 100;
+Get records from employees where experience is less than or equal to 20,SELECT * FROM employees WHERE experience <= 20;
+Get records from employees where order_date is less than or equal to 50,SELECT * FROM employees WHERE order_date <= 50;
+Get records from orders where price is at most 5,SELECT * FROM orders WHERE price <= 5;
+Get records from employees where stock is no more than 5,SELECT * FROM employees WHERE stock <= 5;
+Get records from customers where quantity is at least 50,SELECT * FROM customers WHERE quantity >= 50;
+Get records from products where signup_date is greater than or equal to '2023-06-30',SELECT * FROM products WHERE signup_date >= '2023-06-30';
+Get records from orders where order_date is greater than or equal to 5,SELECT * FROM orders WHERE order_date >= 5;
+Get records from customers where order_date is not less than '2023-06-30',SELECT * FROM customers WHERE order_date >= '2023-06-30';
+Get records from products where price is greater than or equal to 50,SELECT * FROM products WHERE price >= 50;
+Get records from customers where experience is not less than 5,SELECT * FROM customers WHERE experience >= 5;
+Get records from employees where order_date is not less than 50,SELECT * FROM employees WHERE order_date >= 50;
+Get records from products where price is greater than or equal to '2022-01-01',SELECT * FROM products WHERE price >= '2022-01-01';
+Get records from orders where experience is at least 20,SELECT * FROM orders WHERE experience >= 20;
+Get records from customers where price is not less than 5,SELECT * FROM customers WHERE price >= 5;
+Get records from orders where signup_date is at least 20,SELECT * FROM orders WHERE signup_date >= 20;
+Get records from products where stock is not less than 20,SELECT * FROM products WHERE stock >= 20;
+Get records from employees where quantity is greater than or equal to '2022-01-01',SELECT * FROM employees WHERE quantity >= '2022-01-01';
+Get records from orders where price is at least 5,SELECT * FROM orders WHERE price >= 5;
+Get records from orders where signup_date is not less than 20,SELECT * FROM orders WHERE signup_date >= 20;
+Get records from employees where experience is not less than 20,SELECT * FROM employees WHERE experience >= 20;
+Get records from products where order_date is greater than or equal to '2022-01-01',SELECT * FROM products WHERE order_date >= '2022-01-01';
+Get records from customers where stock is greater than or equal to 50,SELECT * FROM customers WHERE stock >= 50;
+Get records from products where signup_date is at least 50,SELECT * FROM products WHERE signup_date >= 50;
+Get records from customers where signup_date is greater than or equal to '2023-06-30',SELECT * FROM customers WHERE signup_date >= '2023-06-30';
+Get records from products where signup_date is at least 20,SELECT * FROM products WHERE signup_date >= 20;
+Get records from employees where order_date is at least 20,SELECT * FROM employees WHERE order_date >= 20;
+Get records from orders where quantity is greater than or equal to '2023-06-30',SELECT * FROM orders WHERE quantity >= '2023-06-30';
+Get records from customers where stock is greater than or equal to '2022-01-01',SELECT * FROM customers WHERE stock >= '2022-01-01';
+Get records from employees where price is greater than or equal to '2023-06-30',SELECT * FROM employees WHERE price >= '2023-06-30';
+Get records from products where stock is not less than 5,SELECT * FROM products WHERE stock >= 5;
+Get records from employees where stock is not less than 5,SELECT * FROM employees WHERE stock >= 5;
+Get records from products where price is at least 5,SELECT * FROM products WHERE price >= 5;
+Get records from employees where price is not less than 20,SELECT * FROM employees WHERE price >= 20;
+Get records from products where experience is at least 5,SELECT * FROM products WHERE experience >= 5;
+Get records from customers where price is greater than or equal to 5,SELECT * FROM customers WHERE price >= 5;
+Get records from customers where stock is greater than or equal to '2023-06-30',SELECT * FROM customers WHERE stock >= '2023-06-30';
+Get records from customers where order_date is greater than or equal to 5,SELECT * FROM customers WHERE order_date >= 5;
+Get records from orders where experience is not less than 5,SELECT * FROM orders WHERE experience >= 5;
+Get records from customers where signup_date is at least 20,SELECT * FROM customers WHERE signup_date >= 20;
+Get records from orders where signup_date is at least 100,SELECT * FROM orders WHERE signup_date >= 100;
+Get records from employees where experience is not less than '2022-01-01',SELECT * FROM employees WHERE experience >= '2022-01-01';
+Get records from employees where experience is at least 20,SELECT * FROM employees WHERE experience >= 20;
+Get records from products where stock is not less than 50,SELECT * FROM products WHERE stock >= 50;
+Get records from products where order_date is at least 5,SELECT * FROM products WHERE order_date >= 5;
+Get records from customers where signup_date is greater than or equal to '2022-01-01',SELECT * FROM customers WHERE signup_date >= '2022-01-01';
+Get records from employees where quantity is at least 20,SELECT * FROM employees WHERE quantity >= 20;
+Get records from products where quantity is greater than or equal to 50,SELECT * FROM products WHERE quantity >= 50;
+Get records from orders where stock is greater than or equal to 100,SELECT * FROM orders WHERE stock >= 100;
+Get records from customers where order_date is at least 5,SELECT * FROM customers WHERE order_date >= 5;
+Get records from products where order_date is greater than or equal to 50,SELECT * FROM products WHERE order_date >= 50;
+Get records from employees where order_date is greater than or equal to 20,SELECT * FROM employees WHERE order_date >= 20;
